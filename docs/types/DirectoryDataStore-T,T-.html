@@ -1,0 +1,21 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - DirectoryDataStore&lt;TKey,TVal&gt;</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.IO.html">Back to VitaNex.IO</a></h4>
+      <h2>DirectoryDataStore&lt;TKey,TVal&gt; : <!-- DBG-1 --><a href="DataStore-T-.html">DataStore</a>&lt;<a href="TKey.html">TKey</a>,<a href="TVal.html">TVal</a>&gt;, <!-- DBG-2.1 --><font color="blue">IDictionary</font>&lt;<a href="TKey.html">TKey</a>,<a href="TVal.html">TVal</a>&gt;, <!-- DBG-2.1 --><font color="blue">ICollection</font>&lt;<font color="blue">KeyValuePair`2</font>&gt;, <!-- DBG-2.1 --><font color="blue">IEnumerable</font>&lt;<font color="blue">KeyValuePair`2</font>&gt;, <!-- DBG-2.1 --><font color="blue">IEnumerable</font>, <!-- DBG-2.1 --><font color="blue">IDictionary</font>, <!-- DBG-2.1 --><font color="blue">ICollection</font>, <!-- DBG-2.1 --><font color="blue">IReadOnlyDictionary</font>&lt;<a href="TKey.html">TKey</a>,<a href="TVal.html">TVal</a>&gt;, <!-- DBG-2.1 --><font color="blue">IReadOnlyCollection</font>&lt;<font color="blue">KeyValuePair`2</font>&gt;, <!-- DBG-2.1 --><font color="blue">ISerializable</font>, <!-- DBG-2.1 --><font color="blue">IDeserializationCallback</font>, <!-- DBG-2.2 --><font color="blue">IDataStore</font>, <!-- DBG-2.1 --><a href="IDisposable.html">IDisposable</a></h2>
+      (<font color="blue">ctor</font>) DirectoryDataStore&lt;TKey,TVal&gt;( DirectoryInfo root )<br>
+      (<font color="blue">ctor</font>) DirectoryDataStore&lt;TKey,TVal&gt;( DirectoryInfo root, <font color="blue">string</font> name )<br>
+      (<font color="blue">ctor</font>) DirectoryDataStore&lt;TKey,TVal&gt;( DirectoryInfo root, <font color="blue">string</font> name, <font color="blue">string</font> fileExt )<br>
+      <font color="blue">bool</font> Async( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> FileExtension( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> <OnImport>b__1c( FileInfo file )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnExport()<br>
+      <font color="blue">void</font> OnExport( <font color="blue">KeyValuePair</font>&lt;<a href="TKey.html">TKey</a>,<a href="TVal.html">TVal</a>&gt; kv )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnExport( FileInfo file, TKey key, TVal val )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnImport()<br>
+      <font color="blue">void</font> OnImport( FileInfo file )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnImport( FileInfo file, <font color="blue">out</font> TKey key, <font color="blue">out</font> TVal val )<br>
+   </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - DonationTransaction</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Modules.AutoDonate.html">Back to VitaNex.Modules.AutoDonate</a></h4>
+      <h2>DonationTransaction : <!-- DBG-2.1 --><a href="IEquatable-T-.html">IEquatable</a>&lt;<a href="DonationTransaction.html">DonationTransaction</a>&gt;, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="DonationTransaction.html">DonationTransaction</a>&gt;</h2>
+      (<font color="blue">ctor</font>) DonationTransaction( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      (<font color="blue">ctor</font>) DonationTransaction( <font color="blue">string</font> id, <!-- DBG-0 --><a href="IAccount.html">IAccount</a> account, <font color="blue">string</font> email, <font color="blue">double</font> total, <font color="blue">long</font> credit, <font color="blue">string</font> notes, <font color="blue">string</font> extra )<br>
+      <!-- DBG-0 --><a href="IAccount.html">IAccount</a> Account( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">long</font> Bonus( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">long</font> Credit( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">long</font> CreditTotal( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> Deleted( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> DeliveredTo( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> DeliveryTime( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> Email( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> Extra( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> FullPath( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> Hidden( <font color="blue">get</font>; )<br>
+      <font color="blue">string</font> ID( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="TransactionState.html">TransactionState</a> InternalState( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> IsClaimed( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> IsPending( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> IsProcessed( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> IsVoided( <font color="blue">get</font>; )<br>
+      <font color="blue">string</font> Notes( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="TransactionState.html">TransactionState</a> State( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> Time( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">double</font> Total( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Version( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Claim( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> CompareTo( <!-- DBG-0 --><a href="DonationTransaction.html">DonationTransaction</a> other )<br>
+      <font color="blue">void</font> Delete()<br>
+      <font color="blue">void</font> Deliver( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Equals( <font color="blue">object</font> obj )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Equals( <!-- DBG-0 --><a href="DonationTransaction.html">DonationTransaction</a> other )<br>
+      <font color="blue">long</font> GetCredit( <!-- DBG-0 --><a href="DonationProfile.html">DonationProfile</a> dp, <font color="blue">out</font> <font color="blue">long</font> credit, <font color="blue">out</font> <font color="blue">long</font> bonus )<br>
+      <font color="blue">long</font> GetCredit( <!-- DBG-0 --><a href="DonationProfile.html">DonationProfile</a> dp, <font color="blue">bool</font> delivering, <font color="blue">out</font> <font color="blue">long</font> credit, <font color="blue">out</font> <font color="blue">long</font> bonus )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> GetHashCode()<br>
+      <font color="blue">void</font> LogToFile()<br>
+      <font color="blue">void</font> OnStateChanged( <!-- DBG-0 --><a href="TransactionState.html">TransactionState</a> oldState )<br>
+      <font color="blue">bool</font> Process()<br>
+      <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">void</font> SetAccount( <!-- DBG-0 --><a href="IAccount.html">IAccount</a> acc )<br>
+      <font color="blue">virtual</font> <font color="blue">string</font> ToString()<br>
+      <font color="blue">bool</font> Void()<br>
+   </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - EffectQueue&lt;TEffectInfo&gt;</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.FX.html">Back to VitaNex.FX</a></h4>
+      <h2>EffectQueue&lt;TEffectInfo&gt; : <!-- DBG-2.1 --><a href="IDisposable.html">IDisposable</a>, <!-- DBG-2.1 --><font color="blue">IEnumerable</font>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt;, <!-- DBG-2.1 --><font color="blue">IEnumerable</font></h2>
+      (<font color="blue">ctor</font>) EffectQueue&lt;TEffectInfo&gt;( Action callback, <a href="Action-T-.html">Action</a>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; handler, <font color="blue">bool</font> deferred )<br>
+      (<font color="blue">ctor</font>) EffectQueue&lt;TEffectInfo&gt;( <font color="blue">IEnumerable</font>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; queue, Action callback, <a href="Action-T-.html">Action</a>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; handler, <font color="blue">bool</font> deferred )<br>
+      (<font color="blue">ctor</font>) EffectQueue&lt;TEffectInfo&gt;( <font color="blue">int</font> capacity, Action callback, <a href="Action-T-.html">Action</a>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; handler, <font color="blue">bool</font> deferred )<br>
+      Action Callback( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Deferred( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="Timer.html">Timer</a> DeferTimer( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <a href="Action-T-.html">Action</a>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; Handler( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> IsDisposed( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <a href="Action-T-.html">Action</a>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; Mutator( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Processed( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Processing( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">Queue</font>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; Queue( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">void</font> Add( TEffectInfo info )<br>
+      <font color="blue">virtual</font> TEffectInfo Dequeue()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Dispose()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Enqueue( TEffectInfo info )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Finalize()<br>
+      <font color="blue">virtual</font> TimeSpan GetDeferDelay( TEffectInfo info )<br>
+      <font color="blue">virtual</font> <font color="blue">IEnumerator</font>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; GetEnumerator()<br>
+      <font color="blue">void</font> InternalDeferredCallback()<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnProcess( TEffectInfo info )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnProcessed()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Process()<br>
+      <font color="blue">virtual</font> IEnumerator System.Collections.IEnumerable.GetEnumerator()<br>
+   </body>
+</html>

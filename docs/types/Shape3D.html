@@ -1,0 +1,32 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - Shape3D</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Geometry.html">Back to VitaNex.Geometry</a></h4>
+      <h2>Shape3D : <!-- DBG-1 --><a href="DynamicWireframe.html">DynamicWireframe</a>, <!-- DBG-2.1 --><a href="IEquatable-T-.html">IEquatable</a>&lt;<a href="DynamicWireframe.html">DynamicWireframe</a>&gt;, <!-- DBG-2.2 --><a href="IWireframe.html">IWireframe</a>, <!-- DBG-2.1 --><font color="blue">IEnumerable</font>&lt;<a href="Block3D.html">Block3D</a>&gt;, <!-- DBG-2.1 --><font color="blue">IEnumerable</font>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a></h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="Cube3D.html">Cube3D</a>, <!-- DBG-3 --><a href="Cylinder3D.html">Cylinder3D</a>, <!-- DBG-3 --><a href="Disc3D.html">Disc3D</a>, <!-- DBG-3 --><a href="Plane3D.html">Plane3D</a>, <!-- DBG-3 --><a href="Ring3D.html">Ring3D</a>, <!-- DBG-3 --><a href="Sphere3D.html">Sphere3D</a></h4>
+      (<font color="blue">ctor</font>) Shape3D()<br>
+      (<font color="blue">ctor</font>) Shape3D( <!-- DBG-0 --><a href="IPoint3D.html">IPoint3D</a> center )<br>
+      (<font color="blue">ctor</font>) Shape3D( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">List</font>&lt;<a href="Block3D.html">Block3D</a>&gt; Blocks( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="Point3D.html">Point3D</a> Center( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="Block3D.html">Block3D</a> Item( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Volume( <font color="blue">get</font>; )<br>
+      <font color="blue">int</font> X( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Y( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Z( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Add( <!-- DBG-0 --><a href="Block3D.html">Block3D</a> item )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> AddRange( <font color="blue">IEnumerable</font>&lt;<a href="Block3D.html">Block3D</a>&gt; collection )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> ForEach( <a href="Action-T-.html">Action</a>&lt;<a href="Block3D.html">Block3D</a>&gt; action )<br>
+      <font color="blue">virtual</font> <font color="blue">IEnumerator</font>&lt;<a href="Block3D.html">Block3D</a>&gt; GetEnumerator()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnRender()<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Remove( <!-- DBG-0 --><a href="Block3D.html">Block3D</a> item )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> RemoveAll( <a href="Predicate-T-.html">Predicate</a>&lt;<a href="Block3D.html">Block3D</a>&gt; match )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> RemoveAt( <font color="blue">int</font> index )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> RemoveRange( <font color="blue">int</font> index, <font color="blue">int</font> count )<br>
+      <font color="blue">void</font> Render()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+   </body>
+</html>

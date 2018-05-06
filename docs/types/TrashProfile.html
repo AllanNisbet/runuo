@@ -1,0 +1,37 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - TrashProfile</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Modules.TrashCollection.html">Back to VitaNex.Modules.TrashCollection</a></h4>
+      <h2>TrashProfile</h2>
+      (<font color="blue">static</font>) <font color="blue">void</font> <ClearHistory>b__0( <font color="blue">List</font>&lt;<a href="TrashProfileEntry.html">TrashProfileEntry</a>&gt; l )<br>
+      (<font color="blue">static</font>) <font color="blue">KeyValuePair</font>&lt;<a href="TimeStamp.html">TimeStamp</a>,<font color="blue">List`1</font>&gt; <Deserialize>b__c( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> r1 )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TrashProfileEntry.html">TrashProfileEntry</a> <Deserialize>b__d( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> r2 )<br>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<a href="TrashProfileEntry.html">TrashProfileEntry</a>&gt; <GetHistory>b__2( <font color="blue">KeyValuePair</font>&lt;<a href="TimeStamp.html">TimeStamp</a>,<font color="blue">List`1</font>&gt; kv )<br>
+      (<font color="blue">static</font>) <font color="blue">int</font> <GetTokenTotal>b__4( <!-- DBG-0 --><a href="TrashProfileEntry.html">TrashProfileEntry</a> e )<br>
+      (<font color="blue">static</font>) <font color="blue">int</font> <GetTokenTotal>b__6( <!-- DBG-0 --><a href="TrashProfileEntry.html">TrashProfileEntry</a> e )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <Serialize>b__8( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> w1, <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> k, <font color="blue">List</font>&lt;<a href="TrashProfileEntry.html">TrashProfileEntry</a>&gt; v )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <Serialize>b__9( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> w2, <!-- DBG-0 --><a href="TrashProfileEntry.html">TrashProfileEntry</a> e )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> GenerateKey( <font color="blue">ref</font> DateTime when )<br>
+      (<font color="blue">static</font>) <font color="blue">int</font> InternalHistorySort( <!-- DBG-0 --><a href="TrashProfileEntry.html">TrashProfileEntry</a> a, <!-- DBG-0 --><a href="TrashProfileEntry.html">TrashProfileEntry</a> b )<br>
+      (<font color="blue">ctor</font>) TrashProfile( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> owner )<br>
+      (<font color="blue">ctor</font>) TrashProfile( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">bool</font> Deleted( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">Dictionary</font>&lt;<a href="TimeStamp.html">TimeStamp</a>,<font color="blue">List`1</font>&gt; History( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> Owner( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">void</font> ClearHistory()<br>
+      <font color="blue">void</font> ClearHistory( DateTime when )<br>
+      <font color="blue">void</font> Delete()<br>
+      <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">List</font>&lt;<a href="TrashProfileEntry.html">TrashProfileEntry</a>&gt; GetHistory( <font color="blue">int</font> limit )<br>
+      <font color="blue">List</font>&lt;<a href="TrashProfileEntry.html">TrashProfileEntry</a>&gt; GetHistory( <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> key, <font color="blue">int</font> limit )<br>
+      <font color="blue">List</font>&lt;<a href="TrashProfileEntry.html">TrashProfileEntry</a>&gt; GetHistory( DateTime when, <font color="blue">int</font> limit )<br>
+      <font color="blue">int</font> GetTokenTotal()<br>
+      <font color="blue">int</font> GetTokenTotal( DateTime when )<br>
+      <font color="blue">void</font> RegisterTokens( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> source, <!-- DBG-0 --><a href="Item.html">Item</a> trashed, <font color="blue">int</font> amount )<br>
+      <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">string</font> ToHtmlString( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> viewer )<br>
+      <font color="blue">bool</font> TransferTokens( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> source, <!-- DBG-0 --><a href="Item.html">Item</a> trashed, <font color="blue">int</font> amount, <font color="blue">bool</font> message )<br>
+   </body>
+</html>

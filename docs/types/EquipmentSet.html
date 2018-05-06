@@ -1,0 +1,52 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - EquipmentSet</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Modules.EquipmentSets.html">Back to VitaNex.Modules.EquipmentSets</a></h4>
+      <h2>EquipmentSet : <!-- DBG-2.1 --><font color="blue">IEnumerable</font>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>&gt;, <!-- DBG-2.1 --><font color="blue">IEnumerable</font></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass1.html">(Anonymous-Type)--c__DisplayClass1</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass17.html">(Anonymous-Type)--c__DisplayClass17</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass1b.html">(Anonymous-Type)--c__DisplayClass1b</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass4.html">(Anonymous-Type)--c__DisplayClass4</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClasse.html">(Anonymous-Type)--c__DisplayClasse</a>, <!-- DBG-4 --><a href="(Anonymous-Type)-FindEquippedParts-d__6.html">(Anonymous-Type)-FindEquippedParts-d__6</a></h4>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<a href="Item.html">Item</a>&gt; <GenerateParts>b__10( <!-- DBG-0 --><a href="EquipmentSetPart.html">EquipmentSetPart</a> part )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <GenerateParts>b__11( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="Item.html">Item</a> <Invalidate>b__15( <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt; t )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="Item.html">Item</a>[] GenerateParts()<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="Item.html">Item</a>[] GenerateParts( Type set )<br>
+      (<font color="blue">ctor</font>) EquipmentSet( <font color="blue">string</font> name, <font color="blue">bool</font> display, <font color="blue">bool</font> displayParts, <font color="blue">bool</font> displayMods, <font color="blue">IEnumerable</font>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>&gt; parts, <font color="blue">IEnumerable</font>&lt;<a href="EquipmentSetMod.html">EquipmentSetMod</a>&gt; mods )<br>
+      <font color="blue">List</font>&lt;<a href="Mobile.html">Mobile</a>&gt; ActiveOwners( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Count( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> Display( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> DisplayMods( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> DisplayParts( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="EquipmentSetPart.html">EquipmentSetPart</a> Item( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">List</font>&lt;<a href="EquipmentSetMod.html">EquipmentSetMod</a>&gt; Mods( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> Name( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">List</font>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>&gt; Parts( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Activate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt;[] equipped, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt; added, <!-- DBG-0 --><font color="blue">EquipmentSetMod</font> mod )<br>
+      <font color="blue">void</font> Add( <!-- DBG-0 --><a href="EquipmentSetPart.html">EquipmentSetPart</a> part )<br>
+      <font color="blue">void</font> Add( <!-- DBG-0 --><font color="blue">EquipmentSetMod</font> mod )<br>
+      <font color="blue">void</font> AddRange( <font color="blue">IEnumerable</font>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>&gt; parts )<br>
+      <font color="blue">void</font> AddRange( <font color="blue">IEnumerable</font>&lt;<a href="EquipmentSetMod.html">EquipmentSetMod</a>&gt; mods )<br>
+      <font color="blue">bool</font> Contains( <!-- DBG-0 --><font color="blue">EquipmentSetMod</font> mod )<br>
+      <font color="blue">bool</font> Contains( <!-- DBG-0 --><a href="EquipmentSetPart.html">EquipmentSetPart</a> part )<br>
+      <font color="blue">int</font> CountEquippedParts( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">bool</font> Deactivate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt;[] equipped, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt; added, <!-- DBG-0 --><font color="blue">EquipmentSetMod</font> mod )<br>
+      <font color="blue">IEnumerable</font>&lt;<a href="EquipmentSetMod.html">EquipmentSetMod</a>&gt; FindAvailableMods( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="EquipmentSetPart.html">EquipmentSetPart</a>[] equipped )<br>
+      <font color="blue">IEnumerable</font>&lt;<a href="Tuple`2.html">Tuple`2</a>&gt; FindEquippedParts( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <!-- DBG-0 --><a href="Item.html">Item</a>[] GenerateParts()<br>
+      <!-- DBG-0 --><font color="blue">EquipmentSetMod</font>[] GetAvailableMods( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="EquipmentSetPart.html">EquipmentSetPart</a>[] equipped )<br>
+      <font color="blue">virtual</font> <font color="blue">IEnumerator</font>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>&gt; GetEnumerator()<br>
+      <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt;[] GetEquippedParts( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> GetProperties( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> viewer, <!-- DBG-0 --><a href="ExtendedOPL.html">ExtendedOPL</a> list, <font color="blue">bool</font> equipped )<br>
+      <font color="blue">bool</font> HasPartTypeOf( Type type )<br>
+      <font color="blue">void</font> Invalidate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
+      <font color="blue">void</font> InvalidateAllProperties( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <font color="blue">IEnumerable</font>&lt;<a href="Item.html">Item</a>&gt; equipped, <!-- DBG-0 --><a href="Item.html">Item</a> changed )<br>
+      <font color="blue">void</font> InvalidateItemProperties( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnActivate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt;[] equipped, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt; added, <!-- DBG-0 --><font color="blue">EquipmentSetMod</font> mod )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnDeactivate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt;[] equipped, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt; removed, <!-- DBG-0 --><font color="blue">EquipmentSetMod</font> mod )<br>
+      <font color="blue">bool</font> Remove( <!-- DBG-0 --><font color="blue">EquipmentSetMod</font> mod )<br>
+      <font color="blue">bool</font> Remove( <!-- DBG-0 --><a href="EquipmentSetPart.html">EquipmentSetPart</a> part )<br>
+      <font color="blue">void</font> SetActiveOwner( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <font color="blue">bool</font> state )<br>
+      <font color="blue">virtual</font> IEnumerator System.Collections.IEnumerable.GetEnumerator()<br>
+      <font color="blue">virtual</font> <font color="blue">string</font> ToString()<br>
+   </body>
+</html>

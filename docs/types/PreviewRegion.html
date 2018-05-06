@@ -1,0 +1,68 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - PreviewRegion</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/Server.html">Back to Server</a></h4>
+      <h2>(<a href="RegionExtUtility.html">RegionExtUtility</a>) - PreviewRegion : <!-- DBG-1 --><a href="Region.html">Region</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IEquatable-T-.html">IEquatable</a>&lt;<a href="Region.html">Region</a>&gt;</h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass10.html">(Anonymous-Type)--c__DisplayClass10</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass12.html">(Anonymous-Type)--c__DisplayClass12</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClasse.html">(Anonymous-Type)--c__DisplayClasse</a></h4>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<a href="EffectInfo.html">EffectInfo</a>&gt; <OnRegister>b__7( <!-- DBG-0 --><a href="EffectInfo.html">EffectInfo</a>[,] list )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="EffectInfo.html">EffectInfo</a> <OnUnregister>b__16( <font color="blue">int</font> i )<br>
+      (<font color="blue">ctor</font>) PreviewRegion( <!-- DBG-0 --><a href="Region.html">Region</a> r )<br>
+      (<font color="blue">ctor</font>) PreviewRegion( <font color="blue">string</font> name, <!-- DBG-0 --><a href="Map.html">Map</a> map, <!-- DBG-0 --><a href="Rectangle2D.html">Rectangle2D</a>[] area )<br>
+      (<font color="blue">ctor</font>) PreviewRegion( <font color="blue">string</font> name, <!-- DBG-0 --><a href="Map.html">Map</a> map, <!-- DBG-0 --><a href="Rectangle3D.html">Rectangle3D</a>[] area )<br>
+      <font color="blue">int</font> EffectHue( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> EffectID( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="EffectRender.html">EffectRender</a> EffectRender( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="EffectInfo.html">EffectInfo</a>[] Effects( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      DateTime Expire( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="RegionSerial.html">RegionSerial</a> Serial( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="PollTimer.html">PollTimer</a> Timer( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="EffectInfo.html">EffectInfo</a>[,] <OnRegister>b__4( <font color="blue">int</font> i )<br>
+      <font color="blue">void</font> <OnRegister>b__8()<br>
+      <font color="blue">bool</font> <OnRegister>b__9()<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> AcceptsSpawnsFrom( <!-- DBG-0 --><a href="Region.html">Region</a> region )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> AllowBeneficial( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> AllowHarmful( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> AllowHousing( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> p )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> AllowSpawn()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> AlterLightLevel( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <font color="blue">ref</font> <font color="blue">int</font> global, <font color="blue">ref</font> <font color="blue">int</font> personal )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanUseStuckMenu( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CheckAccessibility( <!-- DBG-0 --><a href="Item.html">Item</a> item, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">void</font> EnsureDefaults()<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Equals( <!-- DBG-0 --><a href="Region.html">Region</a> other )<br>
+      <font color="blue">virtual</font> TimeSpan GetLogoutDelay( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> Type GetResource( Type type )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnAggressed( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> aggressor, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> aggressed, <font color="blue">bool</font> criminal )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnBeforeDeath( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnBeginSpellCast( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="ISpell.html">ISpell</a> s )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnBeneficialAction( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> helper, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnChildAdded( <!-- DBG-0 --><a href="Region.html">Region</a> child )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnChildRemoved( <!-- DBG-0 --><a href="Region.html">Region</a> child )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnCombatantChange( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> Old, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> New )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnCriminalAction( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnDamage( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <font color="blue">ref</font> <font color="blue">int</font> damage )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnDeath( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnDecay( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnDidHarmful( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> harmer, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> harmed )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <font color="blue">object</font> o )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnEnter( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnExit( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnGotBeneficialAction( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> helper, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnGotHarmful( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> harmer, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> harmed )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnHeal( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <font color="blue">ref</font> <font color="blue">int</font> heal )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnLocationChanged( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> oldLocation )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnMoveInto( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Direction.html">Direction</a> d, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> newLocation, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> oldLocation )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnRegister()<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnResurrect( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnSingleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <font color="blue">object</font> o )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnSkillUse( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <font color="blue">int</font> skill )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnSpeech( <!-- DBG-0 --><a href="SpeechEventArgs.html">SpeechEventArgs</a> args )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnSpellCast( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="ISpell.html">ISpell</a> s )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Target.html">Target</a> t, <font color="blue">object</font> o )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnUnregister()<br>
+      <font color="blue">void</font> Refresh()<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> SendInaccessibleMessage( <!-- DBG-0 --><a href="Item.html">Item</a> item, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> SpellDamageScalar( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> caster, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target, <font color="blue">ref</font> <font color="blue">double</font> damage )<br>
+   </body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - Grid&lt;T&gt;</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.html">Back to VitaNex</a></h4>
+      <h2>Grid&lt;T&gt; : <!-- DBG-2.1 --><font color="blue">IEnumerable</font>&lt;<font color="blue">T</font>&gt;, <!-- DBG-2.1 --><font color="blue">IEnumerable</font></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass12.html">(Anonymous-Type)--c__DisplayClass12</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass16.html">(Anonymous-Type)--c__DisplayClass16</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass1a.html">(Anonymous-Type)--c__DisplayClass1a</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass20.html">(Anonymous-Type)--c__DisplayClass20</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass24.html">(Anonymous-Type)--c__DisplayClass24</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClasse.html">(Anonymous-Type)--c__DisplayClasse</a>, <!-- DBG-4 --><a href="(Anonymous-Type)-FindCells-d__8.html">(Anonymous-Type)-FindCells-d__8</a></h4>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<font color="blue">T</font>&gt; <get_Count>b__0( <font color="blue">List</font>&lt;<font color="blue">T</font>&gt; e )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <get_Count>b__1( T e )<br>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<font color="blue">T</font>&gt; <GetEnumerator>b__1c( <font color="blue">List</font>&lt;<font color="blue">T</font>&gt; x )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <TrimOverflow>b__4( T e )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <TrimOverflow>b__5( T e )<br>
+      (<font color="blue">ctor</font>) Grid&lt;T&gt;()<br>
+      (<font color="blue">ctor</font>) Grid&lt;T&gt;( <!-- DBG-0 --><a href="Grid-T-.html">Grid</a>&lt;<font color="blue">T</font>&gt; grid )<br>
+      (<font color="blue">ctor</font>) Grid&lt;T&gt;( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      (<font color="blue">ctor</font>) Grid&lt;T&gt;( <font color="blue">int</font> width, <font color="blue">int</font> height )<br>
+      <font color="blue">int</font> Capacity( <font color="blue">get</font>; )<br>
+      <font color="blue">int</font> Count( <font color="blue">get</font>; )<br>
+      T DefaultValue( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Height( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      T Item( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Width( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> AppendColumn()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> AppendRow()<br>
+      <font color="blue">void</font> Clear()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">virtual</font> T DeserializeContent( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader, Type type, <font color="blue">int</font> x, <font color="blue">int</font> y )<br>
+      <font color="blue">virtual</font> <font color="blue">IEnumerable</font>&lt;<font color="blue">T</font>&gt; FindCells( <font color="blue">int</font> x, <font color="blue">int</font> y, <font color="blue">int</font> w, <font color="blue">int</font> h )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> ForEach( <a href="Action-T-.html">Action</a>&lt;<a href="Int32.html">Int32</a>,<a href="Int32.html">Int32</a>&gt; action )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> ForEach( <a href="Action-T-.html">Action</a>&lt;<a href="Int32.html">Int32</a>,<a href="Int32.html">Int32</a>,<font color="blue">T</font>&gt; action )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> ForEachIndex( <a href="Action-T-.html">Action</a>&lt;<a href="Int32.html">Int32</a>,<a href="Int32.html">Int32</a>,<a href="Int32.html">Int32</a>&gt; action )<br>
+      <font color="blue">void</font> Free( <font color="blue">bool</font> clear )<br>
+      <font color="blue">virtual</font> T[] GetCells()<br>
+      <font color="blue">virtual</font> T[] GetCells( <font color="blue">int</font> x, <font color="blue">int</font> y, <font color="blue">int</font> w, <font color="blue">int</font> h )<br>
+      <font color="blue">virtual</font> T GetContent( <font color="blue">int</font> x, <font color="blue">int</font> y )<br>
+      <font color="blue">virtual</font> <font color="blue">IEnumerator</font>&lt;<font color="blue">T</font>&gt; GetEnumerator()<br>
+      <font color="blue">virtual</font> Point GetLocaton( T content )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> InsertColumn( <font color="blue">int</font> x )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> InsertRow( <font color="blue">int</font> y )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> PrependColumn()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> PrependRow()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> RemoveColumn( <font color="blue">int</font> x )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> RemoveRow( <font color="blue">int</font> y )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Resize( <font color="blue">int</font> width, <font color="blue">int</font> height )<br>
+      <font color="blue">virtual</font> T[][] SelectCells( <!-- DBG-0 --><a href="Rectangle2D.html">Rectangle2D</a> bounds )<br>
+      <font color="blue">virtual</font> T[][] SelectCells( <font color="blue">int</font> x, <font color="blue">int</font> y, <font color="blue">int</font> w, <font color="blue">int</font> h )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> SerializeContent( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer, T content, <font color="blue">int</font> x, <font color="blue">int</font> y )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> SetAllContent( <a href="Func-T-.html">Func</a>&lt;<a href="Int32.html">Int32</a>,<a href="Int32.html">Int32</a>,<a href="Int32.html">Int32</a>,<font color="blue">T</font>&gt; resolve )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> SetAllContent( <a href="Func-T-.html">Func</a>&lt;<a href="Int32.html">Int32</a>,<a href="Int32.html">Int32</a>,<font color="blue">T</font>,<font color="blue">T</font>&gt; resolve )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> SetAllContent( <a href="Func-T-.html">Func</a>&lt;<a href="Int32.html">Int32</a>,<a href="Int32.html">Int32</a>,<font color="blue">T</font>&gt; resolve )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> SetAllContent( T content, <a href="Predicate-T-.html">Predicate</a>&lt;<font color="blue">T</font>&gt; replace )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> SetContent( <font color="blue">int</font> x, <font color="blue">int</font> y, T content )<br>
+      <font color="blue">virtual</font> IEnumerator System.Collections.IEnumerable.GetEnumerator()<br>
+      <font color="blue">void</font> TrimExcess()<br>
+      <font color="blue">void</font> TrimOverflow()<br>
+   </body>
+</html>

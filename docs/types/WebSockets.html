@@ -1,0 +1,47 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - WebSockets</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Modules.WebSockets.html">Back to VitaNex.Modules.WebSockets</a></h4>
+      <h2>WebSockets</h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass13.html">(Anonymous-Type)--c__DisplayClass13</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass16.html">(Anonymous-Type)--c__DisplayClass16</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass1d.html">(Anonymous-Type)--c__DisplayClass1d</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass22.html">(Anonymous-Type)--c__DisplayClass22</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass26.html">(Anonymous-Type)--c__DisplayClass26</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass2b.html">(Anonymous-Type)--c__DisplayClass2b</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass31.html">(Anonymous-Type)--c__DisplayClass31</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass37.html">(Anonymous-Type)--c__DisplayClass37</a></h4>
+      (<font color="blue">static</font>) <font color="blue">List</font>&lt;<a href="WebSocketsClient.html">WebSocketsClient</a>&gt; Clients( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="WebSocketsOptions.html">WebSocketsOptions</a> CMOptions( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      (<font color="blue">static</font>) TcpListener Listener( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <.cctor>b__39()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <.cctor>b__3a()<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <.cctor>b__3b( <!-- DBG-0 --><a href="WebSocketsClient.html">WebSocketsClient</a> c )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <.cctor>b__3c()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <.cctor>b__3d( <!-- DBG-0 --><a href="NetState.html">NetState</a> ns )<br>
+      (<font color="blue">static</font>) IPInterfaceProperties <AcquireListener>b__0( NetworkInterface adapter )<br>
+      (<font color="blue">static</font>) IPAddress <AcquireListener>b__1( IPInterfaceProperties properties )<br>
+      (<font color="blue">static</font>) IPAddress <AcquireListener>b__2( UnicastIPAddressInformation unicast )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <AcquireListener>b__3( IPAddress ip )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <ListenAsync>b__a()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <ListenAsync>b__b( IAsyncResult r )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <ListenAsync>b__e( Exception e )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <ReleaseListener>b__8()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> AcquireListener()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CMDisabled()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CMDisposed()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CMEnabled()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CMInvoke()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CMLoad()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CMSave()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Compress( <font color="blue">ref</font> <font color="blue">byte</font>[] buffer, <font color="blue">ref</font> <font color="blue">int</font> length )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Connected( <!-- DBG-0 --><a href="WebSocketsClient.html">WebSocketsClient</a> client )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Connected( TcpClient tcp )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Decode( <font color="blue">byte</font>[] src, <font color="blue">out</font> <font color="blue">string</font> data )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Decompress( <font color="blue">ref</font> <font color="blue">byte</font>[] buffer, <font color="blue">ref</font> <font color="blue">int</font> length )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Disconnected( <!-- DBG-0 --><a href="WebSocketsClient.html">WebSocketsClient</a> client )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Encode( <font color="blue">string</font> data, <font color="blue">out</font> <font color="blue">byte</font>[] buffer, <font color="blue">out</font> <font color="blue">int</font> length )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> HandleConnection( <!-- DBG-0 --><a href="WebSocketsClient.html">WebSocketsClient</a> client )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> HandleHttpRequest( <!-- DBG-0 --><a href="WebSocketsClient.html">WebSocketsClient</a> client, <font color="blue">Dictionary</font>&lt;<a href="String.html">String</a>,<a href="String.html">String</a>&gt; headers )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> ListenAsync()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Receive( <!-- DBG-0 --><a href="WebSocketsClient.html">WebSocketsClient</a> client, <font color="blue">bool</font> decompress, <font color="blue">bool</font> decode, <a href="Action-T-.html">Action</a>&lt;<a href="WebSocketsClient.html">WebSocketsClient</a>,<a href="String.html">String</a>,<a href="Byte[].html">Byte[]</a>&gt; callback )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> ReleaseListener()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Send( <!-- DBG-0 --><a href="WebSocketsClient.html">WebSocketsClient</a> client, <font color="blue">byte</font>[] buffer, <font color="blue">int</font> len, <font color="blue">bool</font> compress, <a href="Action-T-.html">Action</a>&lt;<a href="WebSocketsClient.html">WebSocketsClient</a>,<a href="Byte[].html">Byte[]</a>&gt; callback )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Send( <!-- DBG-0 --><a href="WebSocketsClient.html">WebSocketsClient</a> client, <font color="blue">string</font> data, <font color="blue">bool</font> encode, <font color="blue">bool</font> compress, <a href="Action-T-.html">Action</a>&lt;<a href="WebSocketsClient.html">WebSocketsClient</a>,<a href="Byte[].html">Byte[]</a>&gt; callback )<br>
+   </body>
+</html>

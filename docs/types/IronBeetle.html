@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - IronBeetle</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/Server.Mobiles.html">Back to Server.Mobiles</a></h4>
+      <h2>IronBeetle : <!-- DBG-1 --><a href="BaseCreature.html">BaseCreature</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Mobile.html">Mobile</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;, <!-- DBG-2.2 --><a href="IHonorTarget.html">IHonorTarget</a>, <!-- DBG-2.2 --><a href="IQuestGiver.html">IQuestGiver</a></h2>
+      (<font color="blue">static</font>) <font color="blue">void</font> PlaceItemIn( <!-- DBG-0 --><a href="Container.html">Container</a> bank1, <font color="blue">int</font> x, <font color="blue">int</font> y, <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
+      (<font color="blue">ctor</font>) IronBeetle()<br>
+      (<font color="blue">ctor</font>) IronBeetle( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br>
+      <font color="blue">bool</font> CanRummageCorpses( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="FoodType.html">FoodType</a> FavoriteFood( <font color="blue">get</font>; )<br>
+      <font color="blue">int</font> Meat( <font color="blue">get</font>; )<br>
+      DateTime NextUse( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> SubdueBeforeTame( <font color="blue">get</font>; )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> AllowEquipFrom( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanBeRenamedBy( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanPaperdollBeOpenedBy( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CheckNonlocalDrop( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item, <!-- DBG-0 --><a href="Item.html">Item</a> target )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CheckNonlocalLift( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
+      <font color="blue">void</font> ConvertOretoIngot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">bool</font> DoDisposeOre( <font color="blue">int</font> x, <font color="blue">int</font> y, <font color="blue">int</font> z, <!-- DBG-0 --><a href="Map.html">Map</a> map, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> GenerateLoot()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> GetContextMenuEntries( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">List</font>&lt;<a href="ContextMenuEntry.html">ContextMenuEntry</a>&gt; list )<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="DeathMoveResult.html">DeathMoveResult</a> GetInventoryMoveResultFor( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
+      <font color="blue">bool</font> IsMiningTile( <font color="blue">int</font> X, <font color="blue">int</font> Y, <!-- DBG-0 --><a href="Map.html">Map</a> map )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> IsSnoop( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnBeforeDeath()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnDeath( <!-- DBG-0 --><a href="Container.html">Container</a> c )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnDragDrop( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnSpeech( <!-- DBG-0 --><a href="SpeechEventArgs.html">SpeechEventArgs</a> args )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnThink()<br>
+      <font color="blue">void</font> SendAgapiteIngot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">void</font> SendBronzeIngot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">void</font> SendCopperIngot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">void</font> SendDullCopperIngot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">void</font> SendGoldIngot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">void</font> SendIronIngot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">void</font> SendShadowIronIngot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">void</font> SendValoriteIngot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">void</font> SendVeriteIngot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+   </body>
+</html>

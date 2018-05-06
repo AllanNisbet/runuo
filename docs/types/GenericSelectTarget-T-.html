@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - GenericSelectTarget&lt;TObj&gt;</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Targets.html">Back to VitaNex.Targets</a></h4>
+      <h2>GenericSelectTarget&lt;TObj&gt; : <!-- DBG-1 --><a href="Target.html">Target</a>, <!-- DBG-2.2 --><a href="ISelectTarget-T-.html">ISelectTarget</a>&lt;<a href="TObj.html">TObj</a>&gt;, <!-- DBG-2.2 --><a href="ISelectTarget.html">ISelectTarget</a></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="MultiTargetReq.html">MultiTargetReq</a></h4>
+      (<font color="blue">static</font>) <font color="blue">void</font> Begin( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <a href="Action-T-.html">Action</a>&lt;<a href="Mobile.html">Mobile</a>,<a href="TObj.html">TObj</a>&gt; success, <a href="Action-T-.html">Action</a>&lt;<a href="Mobile.html">Mobile</a>&gt; fail, <font color="blue">int</font> range, <font color="blue">bool</font> allowGround, <!-- DBG-0 --><a href="TargetFlags.html">TargetFlags</a> flags )<br>
+      (<font color="blue">ctor</font>) GenericSelectTarget&lt;TObj&gt;( <a href="Action-T-.html">Action</a>&lt;<a href="Mobile.html">Mobile</a>,<a href="TObj.html">TObj</a>&gt; success, <a href="Action-T-.html">Action</a>&lt;<a href="Mobile.html">Mobile</a>&gt; fail )<br>
+      (<font color="blue">ctor</font>) GenericSelectTarget&lt;TObj&gt;( <a href="Action-T-.html">Action</a>&lt;<a href="Mobile.html">Mobile</a>,<a href="TObj.html">TObj</a>&gt; success, <a href="Action-T-.html">Action</a>&lt;<a href="Mobile.html">Mobile</a>&gt; fail, <font color="blue">int</font> range, <font color="blue">bool</font> allowGround, <!-- DBG-0 --><a href="TargetFlags.html">TargetFlags</a> flags )<br>
+      <a href="Action-T-.html">Action</a>&lt;<a href="Mobile.html">Mobile</a>&gt; FailHandler( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> MultiHue( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> MultiID( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="Point3D.html">Point3D</a> MultiOffset( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><font color="blue">TargetResult</font> Result( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <a href="Action-T-.html">Action</a>&lt;<a href="Mobile.html">Mobile</a>,<a href="TObj.html">TObj</a>&gt; SuccessHandler( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> User( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="Packet.html">Packet</a> GetPacketFor( <!-- DBG-0 --><a href="NetState.html">NetState</a> ns )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnCantSeeTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">object</font> targeted )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, TObj targeted )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">object</font> targeted )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnTargetCancel( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="TargetCancelType.html">TargetCancelType</a> cancelType )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnTargetFail()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnTargetInSecureTrade( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">object</font> targeted )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnTargetNotAccessible( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">object</font> targeted )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnTargetOutOfLOS( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">object</font> targeted )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnTargetOutOfRange( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">object</font> targeted )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnTargetUntargetable( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">object</font> targeted )<br>
+   </body>
+</html>

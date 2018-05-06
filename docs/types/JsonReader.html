@@ -1,0 +1,93 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - JsonReader</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Text.html">Back to VitaNex.Text</a></h4>
+      <h2>JsonReader : <!-- DBG-1 --><a href="GenericReader.html">GenericReader</a>, <!-- DBG-2.1 --><a href="IDisposable.html">IDisposable</a></h2>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadGuildList>b__4( <!-- DBG-0 --><a href="BaseGuild.html">BaseGuild</a> o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadGuildSet>b__1a( <!-- DBG-0 --><a href="BaseGuild.html">BaseGuild</a> o )<br>
+      (<font color="blue">static</font>) T <ReadGuildSet>b__1c( <font color="blue">string</font> o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadGuildSet>b__1d( T o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadItemList>b__0( <!-- DBG-0 --><a href="Item.html">Item</a> o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadItemSet>b__12( <!-- DBG-0 --><a href="Item.html">Item</a> o )<br>
+      (<font color="blue">static</font>) T <ReadItemSet>b__14( <!-- DBG-0 --><a href="Serial.html">Serial</a> o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadItemSet>b__15( T o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadMobileList>b__2( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadMobileSet>b__16( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> o )<br>
+      (<font color="blue">static</font>) T <ReadMobileSet>b__18( <!-- DBG-0 --><a href="Serial.html">Serial</a> o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadMobileSet>b__19( T o )<br>
+      (<font color="blue">static</font>) T <ReadStrongGuildList>b__10( <font color="blue">string</font> o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadStrongGuildList>b__11( T o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadStrongGuildList>b__e( <!-- DBG-0 --><a href="BaseGuild.html">BaseGuild</a> o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadStrongItemList>b__6( <!-- DBG-0 --><a href="Item.html">Item</a> o )<br>
+      (<font color="blue">static</font>) T <ReadStrongItemList>b__8( <!-- DBG-0 --><a href="Serial.html">Serial</a> o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadStrongItemList>b__9( T o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadStrongMobileList>b__a( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> o )<br>
+      (<font color="blue">static</font>) T <ReadStrongMobileList>b__c( <!-- DBG-0 --><a href="Serial.html">Serial</a> o )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <ReadStrongMobileList>b__d( T o )<br>
+      (<font color="blue">ctor</font>) JsonReader( StreamReader reader )<br>
+      (<font color="blue">ctor</font>) JsonReader( <font color="blue">byte</font>[] buffer )<br>
+      (<font color="blue">ctor</font>) JsonReader( <font color="blue">string</font> path )<br>
+      (<font color="blue">ctor</font>) JsonReader( Stream stream )<br>
+      (<font color="blue">ctor</font>) JsonReader( <font color="blue">byte</font>[] buffer, Encoding encoding )<br>
+      (<font color="blue">ctor</font>) JsonReader( <font color="blue">string</font> path, Encoding encoding )<br>
+      (<font color="blue">ctor</font>) JsonReader( Stream stream, Encoding encoding )<br>
+      Stream BaseStream( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">List</font>&lt;<a href="Object.html">Object</a>&gt; CurrentNode( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      Encoding Encoding( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> IsDisposed( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">List</font>&lt;<font color="blue">List`1</font>&gt; Nodes( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Dispose()<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> End()<br>
+      <font color="blue">List</font>&lt;<a href="TObj.html">TObj</a>&gt; ReadArray( <a href="Func-T-.html">Func</a>&lt;<font color="blue">T</font>,<a href="TObj.html">TObj</a>&gt; selector, <a href="Func-T-.html">Func</a>&lt;<a href="TObj.html">TObj</a>,<a href="Boolean.html">Boolean</a>&gt; predicate )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> ReadBool()<br>
+      <font color="blue">virtual</font> <font color="blue">byte</font> ReadByte()<br>
+      <font color="blue">virtual</font> <font color="blue">char</font> ReadChar()<br>
+      <font color="blue">virtual</font> DateTime ReadDateTime()<br>
+      <font color="blue">virtual</font> DateTimeOffset ReadDateTimeOffset()<br>
+      <font color="blue">virtual</font> <font color="blue">decimal</font> ReadDecimal()<br>
+      <font color="blue">virtual</font> DateTime ReadDeltaTime()<br>
+      <font color="blue">virtual</font> <font color="blue">double</font> ReadDouble()<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> ReadEncodedInt()<br>
+      <font color="blue">virtual</font> <font color="blue">float</font> ReadFloat()<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="BaseGuild.html">BaseGuild</a> ReadGuild()<br>
+      <font color="blue">virtual</font> T ReadGuild()<br>
+      <font color="blue">virtual</font> ArrayList ReadGuildList()<br>
+      <font color="blue">virtual</font> <font color="blue">HashSet</font>&lt;<font color="blue">T</font>&gt; ReadGuildSet()<br>
+      <font color="blue">virtual</font> <font color="blue">HashSet</font>&lt;<a href="BaseGuild.html">BaseGuild</a>&gt; ReadGuildSet()<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> ReadInt()<br>
+      <font color="blue">virtual</font> IPAddress ReadIPAddress()<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="Item.html">Item</a> ReadItem()<br>
+      <font color="blue">virtual</font> T ReadItem()<br>
+      <font color="blue">virtual</font> ArrayList ReadItemList()<br>
+      <font color="blue">virtual</font> <font color="blue">HashSet</font>&lt;<font color="blue">T</font>&gt; ReadItemSet()<br>
+      <font color="blue">virtual</font> <font color="blue">HashSet</font>&lt;<a href="Item.html">Item</a>&gt; ReadItemSet()<br>
+      <font color="blue">virtual</font> <font color="blue">long</font> ReadLong()<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="Map.html">Map</a> ReadMap()<br>
+      <font color="blue">virtual</font> T ReadMobile()<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="Mobile.html">Mobile</a> ReadMobile()<br>
+      <font color="blue">virtual</font> ArrayList ReadMobileList()<br>
+      <font color="blue">virtual</font> <font color="blue">HashSet</font>&lt;<a href="Mobile.html">Mobile</a>&gt; ReadMobileSet()<br>
+      <font color="blue">virtual</font> <font color="blue">HashSet</font>&lt;<font color="blue">T</font>&gt; ReadMobileSet()<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="Point2D.html">Point2D</a> ReadPoint2D()<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="Point3D.html">Point3D</a> ReadPoint3D()<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="Race.html">Race</a> ReadRace()<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="Rectangle2D.html">Rectangle2D</a> ReadRect2D()<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="Rectangle3D.html">Rectangle3D</a> ReadRect3D()<br>
+      <font color="blue">virtual</font> <font color="blue">sbyte</font> ReadSByte()<br>
+      <font color="blue">virtual</font> <font color="blue">short</font> ReadShort()<br>
+      <font color="blue">virtual</font> <font color="blue">string</font> ReadString()<br>
+      <font color="blue">virtual</font> <font color="blue">List</font>&lt;<a href="BaseGuild.html">BaseGuild</a>&gt; ReadStrongGuildList()<br>
+      <font color="blue">virtual</font> <font color="blue">List</font>&lt;<font color="blue">T</font>&gt; ReadStrongGuildList()<br>
+      <font color="blue">virtual</font> <font color="blue">List</font>&lt;<font color="blue">T</font>&gt; ReadStrongItemList()<br>
+      <font color="blue">virtual</font> <font color="blue">List</font>&lt;<a href="Item.html">Item</a>&gt; ReadStrongItemList()<br>
+      <font color="blue">virtual</font> <font color="blue">List</font>&lt;<font color="blue">T</font>&gt; ReadStrongMobileList()<br>
+      <font color="blue">virtual</font> <font color="blue">List</font>&lt;<a href="Mobile.html">Mobile</a>&gt; ReadStrongMobileList()<br>
+      <font color="blue">virtual</font> TimeSpan ReadTimeSpan()<br>
+      <font color="blue">virtual</font> <font color="blue">uint</font> ReadUInt()<br>
+      <font color="blue">virtual</font> <font color="blue">ulong</font> ReadULong()<br>
+      <font color="blue">virtual</font> <font color="blue">ushort</font> ReadUShort()<br>
+      T ReadValue()<br>
+   </body>
+</html>

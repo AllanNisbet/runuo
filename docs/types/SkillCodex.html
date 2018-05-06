@@ -1,0 +1,39 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - SkillCodex</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Items.html">Back to VitaNex.Items</a></h4>
+      <h2>SkillCodex : <!-- DBG-1 --><a href="Item.html">Item</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;</h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass1.html">(Anonymous-Type)--c__DisplayClass1</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass7.html">(Anonymous-Type)--c__DisplayClass7</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClassd.html">(Anonymous-Type)--c__DisplayClassd</a></h4>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="SkillName.html">SkillName</a> <Deserialize>b__9( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> r )<br>
+      (<font color="blue">ctor</font>) SkillCodex()<br>
+      (<font color="blue">ctor</font>) SkillCodex( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br>
+      (<font color="blue">ctor</font>) SkillCodex( <font color="blue">int</font> count )<br>
+      (<font color="blue">ctor</font>) SkillCodex( <font color="blue">int</font> count, <font color="blue">double</font> value )<br>
+      (<font color="blue">ctor</font>) SkillCodex( <font color="blue">int</font> count, <font color="blue">double</font> value, <font color="blue">bool</font> deleteWhenEmpty )<br>
+      (<font color="blue">ctor</font>) SkillCodex( <font color="blue">int</font> count, <font color="blue">double</font> value, <font color="blue">bool</font> deleteWhenEmpty, <!-- DBG-0 --><a href="SkillCodexMode.html">SkillCodexMode</a> mode )<br>
+      (<font color="blue">ctor</font>) SkillCodex( <font color="blue">int</font> count, <font color="blue">double</font> value, <font color="blue">bool</font> deleteWhenEmpty, <!-- DBG-0 --><a href="SkillCodexMode.html">SkillCodexMode</a> mode, <!-- DBG-0 --><a href="SkillCodexFlags.html">SkillCodexFlags</a> flags )<br>
+      <font color="blue">int</font> Count( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> DeleteWhenEmpty( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="SkillCodexFlags.html">SkillCodexFlags</a> Flags( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">List</font>&lt;<a href="SkillName.html">SkillName</a>&gt; IgnoredSkills( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="SkillCodexMode.html">SkillCodexMode</a> Mode( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">List</font>&lt;<a href="SkillName.html">SkillName</a>&gt; SelectedSkills( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><font color="blue">SuperGump</font> SelectionGump( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">double</font> Value( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> ValueFixed( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> ApplySkills( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> user, <!-- DBG-0 --><a href="SkillName.html">SkillName</a>[] skills )<br>
+      <font color="blue">bool</font> CanReduceSkills( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> user )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">void</font> EndApply( <!-- DBG-0 --><a href="Skill.html">Skill</a> skill )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> GetProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> SelectSkills( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> user )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">bool</font> TryReduceSkills( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> user )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> UseCharges( <font color="blue">int</font> count )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Validate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> user, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> ValidateSkill( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> user, <!-- DBG-0 --><a href="Skill.html">Skill</a> skill, <font color="blue">bool</font> message )<br>
+   </body>
+</html>

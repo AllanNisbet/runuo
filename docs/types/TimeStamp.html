@@ -1,0 +1,57 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - TimeStamp</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.html">Back to VitaNex</a></h4>
+      <h2>TimeStamp : <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="TimeStamp.html">TimeStamp</a>&gt;, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="DateTime.html">DateTime</a>&gt;, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="TimeSpan.html">TimeSpan</a>&gt;, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Double.html">Double</a>&gt;, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Int64.html">Int64</a>&gt;, <!-- DBG-2.1 --><a href="IEquatable-T-.html">IEquatable</a>&lt;<a href="TimeStamp.html">TimeStamp</a>&gt;, <!-- DBG-2.1 --><a href="IEquatable-T-.html">IEquatable</a>&lt;<a href="DateTime.html">DateTime</a>&gt;, <!-- DBG-2.1 --><a href="IEquatable-T-.html">IEquatable</a>&lt;<a href="TimeSpan.html">TimeSpan</a>&gt;, <!-- DBG-2.1 --><a href="IEquatable-T-.html">IEquatable</a>&lt;<a href="Double.html">Double</a>&gt;, <!-- DBG-2.1 --><a href="IEquatable-T-.html">IEquatable</a>&lt;<a href="Int64.html">Int64</a>&gt;</h2>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> Now( <font color="blue">get</font>; )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> UtcNow( <font color="blue">get</font>; )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> Zero( <font color="blue">get</font>; )<br>
+      (<font color="blue">static</font>) <font color="blue">int</font> Compare( <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> l, <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> r )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromDays( <font color="blue">double</font> value )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromDays( <font color="blue">double</font> value, DateTimeKind kind )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromHours( <font color="blue">double</font> value )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromHours( <font color="blue">double</font> value, DateTimeKind kind )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromMilliseconds( <font color="blue">double</font> value )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromMilliseconds( <font color="blue">double</font> value, DateTimeKind kind )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromMinutes( <font color="blue">double</font> value )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromMinutes( <font color="blue">double</font> value, DateTimeKind kind )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromSeconds( <font color="blue">double</font> value )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromSeconds( <font color="blue">double</font> value, DateTimeKind kind )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromTicks( <font color="blue">long</font> value )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> FromTicks( <font color="blue">long</font> value, DateTimeKind kind )<br>
+      (<font color="blue">ctor</font>) TimeStamp( DateTime date )<br>
+      (<font color="blue">ctor</font>) TimeStamp( DateTimeKind kind )<br>
+      (<font color="blue">ctor</font>) TimeStamp( TimeSpan time )<br>
+      (<font color="blue">ctor</font>) TimeStamp( <font color="blue">double</font> stamp )<br>
+      (<font color="blue">ctor</font>) TimeStamp( <font color="blue">long</font> ticks )<br>
+      (<font color="blue">ctor</font>) TimeStamp( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      (<font color="blue">ctor</font>) TimeStamp( <font color="blue">double</font> stamp, DateTimeKind kind )<br>
+      (<font color="blue">ctor</font>) TimeStamp( TimeSpan time, DateTimeKind kind )<br>
+      (<font color="blue">ctor</font>) TimeStamp( <font color="blue">long</font> ticks, DateTimeKind kind )<br>
+      DateTimeKind Kind( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">double</font> Stamp( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">long</font> Ticks( <font color="blue">get</font>; )<br>
+      DateTime Value( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> Add( TimeSpan ts )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> CompareTo( <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> t )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> CompareTo( DateTime d )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> CompareTo( <font color="blue">double</font> stamp )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> CompareTo( TimeSpan t )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> CompareTo( <font color="blue">long</font> ticks )<br>
+      <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Equals( <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> t )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Equals( DateTime d )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Equals( <font color="blue">long</font> ticks )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Equals( <font color="blue">double</font> stamp )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Equals( TimeSpan t )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Equals( <font color="blue">object</font> obj )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> GetHashCode()<br>
+      DateTime ResolveDate()<br>
+      <font color="blue">double</font> ResolveStamp()<br>
+      <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <!-- DBG-0 --><a href="TimeStamp.html">TimeStamp</a> Subtract( TimeSpan ts )<br>
+      <font color="blue">virtual</font> <font color="blue">string</font> ToString()<br>
+   </body>
+</html>

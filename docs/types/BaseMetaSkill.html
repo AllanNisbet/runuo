@@ -1,0 +1,41 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - BaseMetaSkill</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/Server.Mobiles.MetaPet.Skills.html">Back to Server.Mobiles.MetaPet.Skills</a></h4>
+      <h2>BaseMetaSkill : <!-- DBG-1 --><font color="blue">PropertyObject</font>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass12.html">(Anonymous-Type)--c__DisplayClass12</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass4.html">(Anonymous-Type)--c__DisplayClass4</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass6.html">(Anonymous-Type)--c__DisplayClass6</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass9.html">(Anonymous-Type)--c__DisplayClass9</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClassc.html">(Anonymous-Type)--c__DisplayClassc</a>, <!-- DBG-4 --><a href="InternalBleedTimer.html">InternalBleedTimer</a></h4>
+      (<font color="blue">static</font>) <font color="blue">int</font> BloodOffset( <font color="blue">int</font> coord )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CreateBlood( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> loc, <!-- DBG-0 --><a href="Map.html">Map</a> map, <font color="blue">bool</font> delayed, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      (<font color="blue">ctor</font>) BaseMetaSkill( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      (<font color="blue">ctor</font>) BaseMetaSkill( <!-- DBG-0 --><a href="MetaSkillType.html">MetaSkillType</a> skilltype, <font color="blue">string</font> name, <font color="blue">int</font> nle, <font color="blue">int</font> maxlevel, <font color="blue">double</font> chance, TimeSpan cooldown, <font color="blue">double</font> multi )<br>
+      <font color="blue">double</font> AbilityMultiplier( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">double</font> ChanceToActivate( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      TimeSpan CoolDown( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Experience( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Level( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> MaxLevel( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="MetaSkillType.html">MetaSkillType</a> MetaSkillType( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> Name( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> NextLevelExperience( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      DateTime NextUse( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">List</font>&lt;<a href="Mobile.html">Mobile</a>&gt; AcquireTargets( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> pet, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> p, <font color="blue">int</font> range )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Clear()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">void</font> DoAbilityBleed( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> target, <!-- DBG-0 --><a href="BaseMetaPet.html">BaseMetaPet</a> pet )<br>
+      <font color="blue">void</font> DoAbilityGoldFind( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> target, <!-- DBG-0 --><a href="BaseMetaPet.html">BaseMetaPet</a> pet )<br>
+      <font color="blue">void</font> DoAbilityMoltenBreath( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> target, <!-- DBG-0 --><a href="BaseMetaPet.html">BaseMetaPet</a> pet )<br>
+      <font color="blue">void</font> DoAbilityNoxiousBlood( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> target, <!-- DBG-0 --><a href="BaseMetaPet.html">BaseMetaPet</a> pet )<br>
+      <font color="blue">void</font> DoAbilityQuicksilver( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> target, <!-- DBG-0 --><a href="BaseMetaPet.html">BaseMetaPet</a> pet )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> FindAbility( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> target, <!-- DBG-0 --><a href="BaseMetaPet.html">BaseMetaPet</a> pet )<br>
+      <font color="blue">void</font> LevelUpBleed( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to )<br>
+      <font color="blue">void</font> LevelUpGoldFind( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to )<br>
+      <font color="blue">void</font> LevelUpMoltenBreath( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to )<br>
+      <font color="blue">void</font> LevelUpNoxiousBlood( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to )<br>
+      <font color="blue">void</font> LevelUpQuicksilver( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Reset()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> SetLevel()<br>
+   </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - Json</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Text.html">Back to VitaNex.Text</a></h4>
+      <h2>Json</h2>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <Decode>b__2( <font color="blue">char</font> c )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <Encode>b__0( <font color="blue">char</font> c )<br>
+      (<font color="blue">static</font>) <font color="blue">object</font> Decode( <font color="blue">string</font> json )<br>
+      (<font color="blue">static</font>) <font color="blue">object</font> Decode( <font color="blue">string</font> json, <font color="blue">out</font> <!-- DBG-0 --><a href="JsonException.html">JsonException</a> e )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> Decode( <font color="blue">string</font> json, <font color="blue">out</font> <font color="blue">object</font> value )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> Decode( <font color="blue">string</font> json, <font color="blue">out</font> <font color="blue">object</font> value, <font color="blue">out</font> <!-- DBG-0 --><a href="JsonException.html">JsonException</a> e )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> DeserializeArray( <font color="blue">string</font> json, <font color="blue">ref</font> <font color="blue">int</font> index, <font color="blue">out</font> <font color="blue">object</font> value )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> DeserializeNumber( <font color="blue">string</font> json, <font color="blue">ref</font> <font color="blue">int</font> index, <font color="blue">out</font> <font color="blue">object</font> value )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> DeserializeObject( <font color="blue">string</font> json, <font color="blue">ref</font> <font color="blue">int</font> index, <font color="blue">out</font> <font color="blue">object</font> value )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> DeserializeString( <font color="blue">string</font> json, <font color="blue">ref</font> <font color="blue">int</font> index, <font color="blue">out</font> <font color="blue">object</font> value )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> DeserializeValue( <font color="blue">string</font> json, <font color="blue">ref</font> <font color="blue">int</font> index, <font color="blue">out</font> <font color="blue">object</font> value )<br>
+      (<font color="blue">static</font>) <font color="blue">string</font> Encode( <font color="blue">object</font> value )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> Encode( <font color="blue">object</font> value, <font color="blue">out</font> <font color="blue">string</font> json )<br>
+      (<font color="blue">static</font>) <font color="blue">string</font> Encode( <font color="blue">object</font> value, <font color="blue">out</font> <!-- DBG-0 --><a href="JsonException.html">JsonException</a> e )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> Encode( <font color="blue">object</font> value, <font color="blue">out</font> <font color="blue">string</font> json, <font color="blue">out</font> <!-- DBG-0 --><a href="JsonException.html">JsonException</a> e )<br>
+      (<font color="blue">static</font>) <font color="blue">int</font> PeekNumber( <font color="blue">string</font> json, <font color="blue">int</font> index, <font color="blue">out</font> <font color="blue">int</font> length )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="JsonToken.html">JsonToken</a> PeekToken( <font color="blue">string</font> json, <font color="blue">ref</font> <font color="blue">int</font> index )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="JsonToken.html">JsonToken</a> PeekToken( <font color="blue">string</font> json, <font color="blue">int</font> index )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> SerializeArray( IEnumerable arr, StringBuilder json )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> SerializeNumber( <font color="blue">double</font> num, StringBuilder json )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> SerializeObject( IDictionary obj, StringBuilder json )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> SerializeString( <font color="blue">string</font> str, StringBuilder json )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> SerializeValue( <font color="blue">object</font> val, StringBuilder json )<br>
+      (<font color="blue">static</font>) <font color="blue">int</font> SkipWhiteSpace( <font color="blue">string</font> json, <font color="blue">int</font> index )<br>
+   </body>
+</html>

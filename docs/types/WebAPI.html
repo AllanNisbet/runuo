@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - WebAPI</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Web.html">Back to VitaNex.Web</a></h4>
+      <h2>WebAPI</h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass1a.html">(Anonymous-Type)--c__DisplayClass1a</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass1d.html">(Anonymous-Type)--c__DisplayClass1d</a>, <!-- DBG-4 --><a href="<>c__DisplayClass20-T-.html"><>c__DisplayClass20</a>&lt;<font color="blue">T</font>&gt;, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass3.html">(Anonymous-Type)--c__DisplayClass3</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass9.html">(Anonymous-Type)--c__DisplayClass9</a>, <!-- DBG-4 --><a href="(Anonymous-Type)-DecodeQuery-d__d.html">(Anonymous-Type)-DecodeQuery-d__d</a>, <!-- DBG-4 --><a href="ClientUtility.html">ClientUtility</a>, <!-- DBG-4 --><a href="ListenerUtility.html">ListenerUtility</a>, <!-- DBG-4 --><a href="RequestUtility.html">RequestUtility</a></h4>
+      (<font color="blue">static</font>) <font color="blue">List</font>&lt;<a href="WebAPIClient.html">WebAPIClient</a>&gt; Clients( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="WebAPIOptions.html">WebAPIOptions</a> CSOptions( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      (<font color="blue">static</font>) <font color="blue">Dictionary</font>&lt;<a href="String.html">String</a>,<a href="WebAPIHandler.html">WebAPIHandler</a>&gt; Handlers( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      (<font color="blue">static</font>) TcpListener Listener( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <.cctor>b__22()<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <.cctor>b__23( <!-- DBG-0 --><font color="blue">WebAPIClient</font> c )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <.cctor>b__24()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <CSConfig>b__28()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <CSDisposed>b__2a( <!-- DBG-0 --><font color="blue">WebAPIClient</font> c )<br>
+      (<font color="blue">static</font>) <font color="blue">string</font> <EncodeQuery>b__b( <font color="blue">KeyValuePair</font>&lt;<a href="String.html">String</a>,<a href="String.html">String</a>&gt; kv )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> BeginRequest( <font color="blue">string</font> uri, T state, <a href="WebAPIRequestSend-T-.html">WebAPIRequestSend</a>&lt;<font color="blue">T</font>&gt; send, <a href="WebAPIRequestReceive-T-.html">WebAPIRequestReceive</a>&lt;<font color="blue">T</font>&gt; receive )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> BeginRequest( <font color="blue">string</font> url, <font color="blue">object</font> state, <a href="WebAPIRequestSend-T-.html">WebAPIRequestSend</a>&lt;<a href="Object.html">Object</a>&gt; send, <a href="WebAPIRequestReceive-T-.html">WebAPIRequestReceive</a>&lt;<a href="Object.html">Object</a>&gt; receive )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Connect( <!-- DBG-0 --><font color="blue">WebAPIClient</font> client )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CSConfig()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CSDisposed()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CSInvoke()<br>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<font color="blue">KeyValuePair`2</font>&gt; DecodeQuery( <font color="blue">string</font> query )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> Disconnect( <!-- DBG-0 --><font color="blue">WebAPIClient</font> client )<br>
+      (<font color="blue">static</font>) <font color="blue">string</font> EncodeQuery( <font color="blue">IEnumerable</font>&lt;<font color="blue">KeyValuePair`2</font>&gt; queries )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> ExtractKeyValuePair( <font color="blue">string</font> kv, <font color="blue">out</font> <font color="blue">string</font> key, <font color="blue">out</font> <font color="blue">string</font> value )<br>
+      (<font color="blue">static</font>) <font color="blue">string</font> GetContent( HttpWebResponse response )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> HandleRoot( <!-- DBG-0 --><a href="WebAPIContext.html">WebAPIContext</a> context )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> Register( <font color="blue">string</font> uri, <a href="Action-T-.html">Action</a>&lt;<a href="WebAPIContext.html">WebAPIContext</a>&gt; handler )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> SetContent( HttpWebRequest request, <font color="blue">string</font> content )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> Unregister( <font color="blue">string</font> uri )<br>
+   </body>
+</html>

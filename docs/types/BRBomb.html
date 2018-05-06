@@ -1,0 +1,32 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - BRBomb</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/Server.Engines.ConPVP.html">Back to Server.Engines.ConPVP</a></h4>
+      <h2>BRBomb : <!-- DBG-1 --><a href="Item.html">Item</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;</h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="BombTarget.html">BombTarget</a>, <!-- DBG-4 --><a href="EffectTimer.html">EffectTimer</a></h4>
+      (<font color="blue">ctor</font>) BRBomb( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br>
+      (<font color="blue">ctor</font>) BRBomb( <!-- DBG-0 --><a href="BRGame.html">BRGame</a> game )<br>
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> Thrower( <font color="blue">get</font>; )<br>
+      <font color="blue">void</font> BeginFlight( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> dest )<br>
+      <font color="blue">bool</font> CheckCatch( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> myLoc )<br>
+      <font color="blue">bool</font> CheckScore( <!-- DBG-0 --><a href="BRGoal.html">BRGoal</a> goal, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <font color="blue">int</font> points )<br>
+      <font color="blue">void</font> ContinueFlight()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">void</font> DoAnim( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> start, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> end, <!-- DBG-0 --><a href="Map.html">Map</a> map )<br>
+      <font color="blue">void</font> DoCatch( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">void</font> DropTo( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killer )<br>
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> FindOwner( <font color="blue">object</font> parent )<br>
+      <font color="blue">void</font> HitObject( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> ballLoc, <font color="blue">int</font> objZ, <font color="blue">int</font> objHeight )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnAdded( <!-- DBG-0 --><a href="IEntity.html">IEntity</a> parent )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnAfterDelete()<br>
+      <font color="blue">bool</font> OnBombTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">object</font> obj )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnLocationChange( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> oldLocation )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnMoveOver( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnRemoved( <!-- DBG-0 --><a href="IEntity.html">IEntity</a> parent )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">bool</font> TakeBomb( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="BRTeamInfo.html">BRTeamInfo</a> team, <font color="blue">string</font> verb )<br>
+   </body>
+</html>

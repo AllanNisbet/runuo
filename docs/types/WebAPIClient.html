@@ -1,0 +1,32 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - WebAPIClient</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Web.html">Back to VitaNex.Web</a></h4>
+      <h2>WebAPIClient : <!-- DBG-2.1 --><a href="IDisposable.html">IDisposable</a></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClasse.html">(Anonymous-Type)--c__DisplayClasse</a>, <!-- DBG-4 --><a href="(Anonymous-Type)-ParseHeaders-d__0.html">(Anonymous-Type)-ParseHeaders-d__0</a></h4>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<a href="KeyValueString.html">KeyValueString</a>&gt; ParseHeaders( <font color="blue">IEnumerable</font>&lt;<a href="String.html">String</a>&gt; headers )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> Sequence( <font color="blue">byte</font> b, <font color="blue">ref</font> <font color="blue">int</font> seq )<br>
+      (<font color="blue">ctor</font>) WebAPIClient( TcpClient client )<br>
+      TcpClient Client( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Connected( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> IsDisposed( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      NetworkStream Stream( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> <Receive>b__b()<br>
+      <font color="blue">bool</font> <ReceiveHeaders>b__9()<br>
+      <font color="blue">void</font> Close()<br>
+      <font color="blue">void</font> Close( <font color="blue">bool</font> disconnecting )<br>
+      <font color="blue">void</font> Compress( <font color="blue">ref</font> <font color="blue">byte</font>[] buffer, <font color="blue">ref</font> <font color="blue">int</font> length )<br>
+      <font color="blue">void</font> Decode( Encoding enc, <font color="blue">byte</font>[] buffer, <font color="blue">int</font> length, <font color="blue">out</font> <font color="blue">string</font> data )<br>
+      <font color="blue">void</font> Decompress( <font color="blue">ref</font> <font color="blue">byte</font>[] buffer, <font color="blue">ref</font> <font color="blue">int</font> length )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Dispose()<br>
+      <font color="blue">void</font> Encode( Encoding enc, <font color="blue">string</font> data, <font color="blue">out</font> <font color="blue">byte</font>[] buffer, <font color="blue">out</font> <font color="blue">int</font> length )<br>
+      <font color="blue">void</font> Receive( <font color="blue">bool</font> decompress, Encoding enc, <font color="blue">out</font> <font color="blue">string</font> content, <font color="blue">out</font> <font color="blue">byte</font>[] buffer, <font color="blue">out</font> <font color="blue">int</font> length )<br>
+      <font color="blue">bool</font> ReceiveHeaders( <font color="blue">out</font> <!-- DBG-0 --><a href="KeyValueString.html">KeyValueString</a>[] headers )<br>
+      <font color="blue">int</font> Send( <font color="blue">bool</font> compress, <font color="blue">string</font> data, Encoding enc )<br>
+      <font color="blue">void</font> Send( <font color="blue">bool</font> compress, <font color="blue">ref</font> <font color="blue">byte</font>[] buffer, <font color="blue">ref</font> <font color="blue">int</font> length )<br>
+      <font color="blue">void</font> Send( <font color="blue">bool</font> compress, <font color="blue">string</font> data, Encoding enc, <font color="blue">out</font> <font color="blue">byte</font>[] buffer, <font color="blue">out</font> <font color="blue">int</font> length )<br>
+      <font color="blue">virtual</font> <font color="blue">string</font> ToString()<br>
+   </body>
+</html>

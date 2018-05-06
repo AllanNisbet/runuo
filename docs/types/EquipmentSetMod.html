@@ -1,0 +1,24 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - EquipmentSetMod</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Modules.EquipmentSets.html">Back to VitaNex.Modules.EquipmentSets</a></h4>
+      <h2>EquipmentSetMod : <!-- DBG-2.2 --><a href="IExpansionCheck.html">IExpansionCheck</a></h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="HueOverrideSetMod.html">HueOverrideSetMod</a>, <!-- DBG-3 --><a href="ResistOffsetSetMod.html">ResistOffsetSetMod</a>, <!-- DBG-3 --><a href="SkillOffsetSetMod.html">SkillOffsetSetMod</a>, <!-- DBG-3 --><a href="StatOffsetSetMod.html">StatOffsetSetMod</a></h4>
+      (<font color="blue">ctor</font>) EquipmentSetMod( <font color="blue">string</font> name, <font color="blue">string</font> desc, <font color="blue">int</font> partsReq, <font color="blue">bool</font> display, <!-- DBG-0 --><a href="ExpansionFlags.html">ExpansionFlags</a> ex )<br>
+      <font color="blue">List</font>&lt;<a href="Mobile.html">Mobile</a>&gt; ActiveOwners( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> Desc( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Display( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="ExpansionFlags.html">ExpansionFlags</a> Expansions( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> Name( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> PartsRequired( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Activate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt;[] equipped )<br>
+      <font color="blue">bool</font> Deactivate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt;[] equipped )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> GetProperties( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> viewer, <!-- DBG-0 --><a href="ExtendedOPL.html">ExtendedOPL</a> list, <font color="blue">bool</font> equipped )<br>
+      <font color="blue">bool</font> IsActive( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnActivate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt;[] equipped )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnDeactivate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <a href="Tuple-T-.html">Tuple</a>&lt;<a href="EquipmentSetPart.html">EquipmentSetPart</a>,<a href="Item.html">Item</a>&gt;[] equipped )<br>
+      <font color="blue">virtual</font> <font color="blue">string</font> ToString()<br>
+   </body>
+</html>

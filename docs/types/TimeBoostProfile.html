@@ -1,0 +1,43 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - TimeBoostProfile</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.TimeBoosts.html">Back to VitaNex.TimeBoosts</a></h4>
+      <h2>TimeBoostProfile : <!-- DBG-1 --><font color="blue">PropertyObject</font>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><font color="blue">IEnumerable</font>&lt;<font color="blue">KeyValuePair`2</font>&gt;, <!-- DBG-2.1 --><font color="blue">IEnumerable</font></h2>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<a href="ITimeBoost.html">ITimeBoost</a>&gt; <.ctor>b__2( <!-- DBG-0 --><a href="ITimeBoost.html">ITimeBoost</a>[] l )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="ITimeBoost.html">ITimeBoost</a> <.ctor>b__3( <!-- DBG-0 --><a href="ITimeBoost.html">ITimeBoost</a> t )<br>
+      (<font color="blue">static</font>) <font color="blue">int</font> <.ctor>b__4( <!-- DBG-0 --><a href="ITimeBoost.html">ITimeBoost</a> t )<br>
+      (<font color="blue">static</font>) <font color="blue">KeyValuePair</font>&lt;<a href="ITimeBoost.html">ITimeBoost</a>,<a href="Int32.html">Int32</a>&gt; <Deserialize>b__a( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> r )<br>
+      (<font color="blue">static</font>) <font color="blue">long</font> <get_TotalTime>b__0( <font color="blue">KeyValuePair</font>&lt;<a href="ITimeBoost.html">ITimeBoost</a>,<a href="Int32.html">Int32</a>&gt; kv )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <Serialize>b__8( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> w, <!-- DBG-0 --><a href="ITimeBoost.html">ITimeBoost</a> k, <font color="blue">int</font> v )<br>
+      (<font color="blue">ctor</font>) TimeBoostProfile( <!-- DBG-0 --><a href="IAccount.html">IAccount</a> owner )<br>
+      (<font color="blue">ctor</font>) TimeBoostProfile( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">int</font> Item( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="IAccount.html">IAccount</a> Owner( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      TimeSpan TotalTime( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> <Deserialize>b__b( <!-- DBG-0 --><a href="ITimeBoost.html">ITimeBoost</a> t )<br>
+      <font color="blue">bool</font> CanConsume( <!-- DBG-0 --><a href="ITimeBoost.html">ITimeBoost</a> b, <font color="blue">int</font> amount )<br>
+      <font color="blue">bool</font> CanCredit( <!-- DBG-0 --><a href="ITimeBoost.html">ITimeBoost</a> b, <font color="blue">int</font> amount )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Clear()<br>
+      <font color="blue">bool</font> Consume( <font color="blue">int</font> hours, <font color="blue">int</font> minutes )<br>
+      <font color="blue">bool</font> Consume( <!-- DBG-0 --><a href="ITimeBoost.html">ITimeBoost</a> b, <font color="blue">int</font> amount )<br>
+      <font color="blue">bool</font> Consume( <font color="blue">int</font> hours, <font color="blue">int</font> minutes, <font color="blue">bool</font> update )<br>
+      <font color="blue">bool</font> Consume( <font color="blue">int</font> time, <font color="blue">byte</font> index, <font color="blue">bool</font> update, <font color="blue">out</font> <font color="blue">int</font> totalTime )<br>
+      <font color="blue">bool</font> Consume( <font color="blue">int</font> hours, <font color="blue">int</font> minutes, <font color="blue">bool</font> update, <font color="blue">out</font> <font color="blue">int</font> totalHours, <font color="blue">out</font> <font color="blue">int</font> totalMinutes )<br>
+      <font color="blue">bool</font> ConsumeHours( <font color="blue">int</font> value )<br>
+      <font color="blue">bool</font> ConsumeMinutes( <font color="blue">int</font> value )<br>
+      <font color="blue">bool</font> Credit( <!-- DBG-0 --><a href="ITimeBoost.html">ITimeBoost</a> b, <font color="blue">int</font> amount )<br>
+      <font color="blue">bool</font> Credit( <font color="blue">int</font> hours, <font color="blue">int</font> minutes )<br>
+      <font color="blue">bool</font> Credit( <font color="blue">int</font> hours, <font color="blue">int</font> minutes, <font color="blue">bool</font> update )<br>
+      <font color="blue">bool</font> Credit( <font color="blue">int</font> time, <font color="blue">byte</font> index, <font color="blue">bool</font> update, <font color="blue">out</font> <font color="blue">int</font> totalTime )<br>
+      <font color="blue">bool</font> Credit( <font color="blue">int</font> hours, <font color="blue">int</font> minutes, <font color="blue">bool</font> update, <font color="blue">out</font> <font color="blue">int</font> totalHours, <font color="blue">out</font> <font color="blue">int</font> totalMinutes )<br>
+      <font color="blue">bool</font> CreditHours( <font color="blue">int</font> value )<br>
+      <font color="blue">bool</font> CreditMinutes( <font color="blue">int</font> value )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">virtual</font> <font color="blue">IEnumerator</font>&lt;<font color="blue">KeyValuePair`2</font>&gt; GetEnumerator()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Reset()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">virtual</font> IEnumerator System.Collections.IEnumerable.GetEnumerator()<br>
+   </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - IGameEngine</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Modules.Games.html">Back to VitaNex.Modules.Games</a></h4>
+      <h2>IGameEngine : <!-- DBG-2.1 --><a href="IDisposable.html">IDisposable</a></h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="GameEngine-T-.html">GameEngine</a>&lt;<a href="TGame.html">TGame</a>,<a href="TGump.html">TGump</a>&gt;, <!-- DBG-3 --><a href="TrapSweeperEngine.html">TrapSweeperEngine</a></h4>
+      <!-- DBG-0 --><font color="blue">IGame</font> Game( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> IsDisposed( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> IsDisposing( <font color="blue">get</font>; )<br>
+      <font color="blue">double</font> Points( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="ArcadeProfile.html">ArcadeProfile</a> Profile( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="GameStatistics.html">GameStatistics</a> Statistics( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="IGameUI.html">IGameUI</a> UI( <font color="blue">get</font>; )<br>
+      Type UIType( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> User( <font color="blue">get</font>; )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Close()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> DecreasePoints( <font color="blue">double</font> value, <font color="blue">bool</font> log )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> IncreasePoints( <font color="blue">double</font> value, <font color="blue">bool</font> log )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Log( <font color="blue">string</font> context, <font color="blue">double</font> value, <font color="blue">bool</font> offset )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> LogDecrease( <font color="blue">string</font> context, <font color="blue">double</font> value )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> LogIncrease( <font color="blue">string</font> context, <font color="blue">double</font> value )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> LogStatistics()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OffsetPoints( <font color="blue">double</font> value, <font color="blue">bool</font> log )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Open()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Reset()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> Validate()<br>
+   </body>
+</html>

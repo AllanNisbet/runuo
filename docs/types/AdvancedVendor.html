@@ -1,0 +1,67 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - AdvancedVendor</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Mobiles.html">Back to VitaNex.Mobiles</a></h4>
+      <h2>AdvancedVendor : <!-- DBG-1 --><a href="BaseVendor.html">BaseVendor</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Mobile.html">Mobile</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;, <!-- DBG-2.2 --><a href="IHonorTarget.html">IHonorTarget</a>, <!-- DBG-2.2 --><a href="IQuestGiver.html">IQuestGiver</a>, <!-- DBG-2.2 --><a href="IVendor.html">IVendor</a>, <!-- DBG-2.2 --><a href="IAdvancedVendor.html">IAdvancedVendor</a></h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="TrashVendor.html">TrashVendor</a>, <!-- DBG-3 --><a href="VoteVendor.html">VoteVendor</a></h4>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass11.html">(Anonymous-Type)--c__DisplayClass11</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass18.html">(Anonymous-Type)--c__DisplayClass18</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass1b.html">(Anonymous-Type)--c__DisplayClass1b</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass1f.html">(Anonymous-Type)--c__DisplayClass1f</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass25.html">(Anonymous-Type)--c__DisplayClass25</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass27.html">(Anonymous-Type)--c__DisplayClass27</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass2a.html">(Anonymous-Type)--c__DisplayClass2a</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass2d.html">(Anonymous-Type)--c__DisplayClass2d</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass9.html">(Anonymous-Type)--c__DisplayClass9</a></h4>
+      (<font color="blue">static</font>) <font color="blue">List</font>&lt;<a href="AdvancedVendor.html">AdvancedVendor</a>&gt; Instances( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <.ctor>b__0( <!-- DBG-0 --><a href="AdvancedVendor.html">AdvancedVendor</a> v )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <InitSBInfo>b__4( <!-- DBG-0 --><a href="SBInfo.html">SBInfo</a> sb )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <InitSBInfo>b__5( <!-- DBG-0 --><a href="GenericBuyInfo.html">GenericBuyInfo</a> b )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <OnRaceChange>b__2( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <VendorSell>b__b( <!-- DBG-0 --><a href="IShopSellInfo.html">IShopSellInfo</a> ssi )<br>
+      (<font color="blue">ctor</font>) AdvancedVendor( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br>
+      (<font color="blue">ctor</font>) AdvancedVendor( <font color="blue">string</font> title )<br>
+      (<font color="blue">ctor</font>) AdvancedVendor( <font color="blue">string</font> title, <font color="blue">string</font> cashProp, <!-- DBG-0 --><a href="TextDefinition.html">TextDefinition</a> cashName, <!-- DBG-0 --><a href="TextDefinition.html">TextDefinition</a> cashAbbr, <font color="blue">bool</font> showCashName )<br>
+      (<font color="blue">ctor</font>) AdvancedVendor( <font color="blue">string</font> title, Type cashType, <!-- DBG-0 --><a href="TextDefinition.html">TextDefinition</a> cashName, <!-- DBG-0 --><a href="TextDefinition.html">TextDefinition</a> cashAbbr, <font color="blue">bool</font> showCashName )<br>
+      <!-- DBG-0 --><font color="blue">AdvancedSBInfo</font> AdvancedStock( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> CanTeach( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="TextDefinition.html">TextDefinition</a> CashAbbr( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="TextDefinition.html">TextDefinition</a> CashName( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="ObjectProperty.html">ObjectProperty</a> CashProperty( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <a href="TypeSelectProperty-T-.html">TypeSelectProperty</a>&lt;<a href="Object.html">Object</a>&gt; CashType( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="Race.html">Race</a> DefaultRace( <font color="blue">get</font>; )<br>
+      <font color="blue">int</font> Discount( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> DiscountEnabled( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> DiscountYell( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="Race.html">Race</a>[] RequiredRaces( <font color="blue">get</font>; )<br>
+      <font color="blue">List</font>&lt;<a href="SBInfo.html">SBInfo</a>&gt; SBInfos( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="VendorShoeType.html">VendorShoeType</a> ShoeType( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> ShowCashName( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Trading( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">void</font> AddOrder( <font color="blue">int</font> price )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> AddOrder( Type type, <font color="blue">int</font> price )<br>
+      <font color="blue">void</font> AddStock( <font color="blue">int</font> price, <font color="blue">string</font> name, <font color="blue">int</font> amount, <font color="blue">object</font>[] args )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> AddStock( Type type, <font color="blue">int</font> price, <font color="blue">string</font> name, <font color="blue">int</font> amount, <font color="blue">object</font>[] args )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanSell( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> seller, <!-- DBG-0 --><a href="IShopSellInfo.html">IShopSellInfo</a>[] info, <!-- DBG-0 --><a href="SellItemResponse.html">SellItemResponse</a> resp )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanSellItem( <!-- DBG-0 --><a href="Item.html">Item</a> item, <!-- DBG-0 --><a href="IShopSellInfo.html">IShopSellInfo</a> ssi )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CheckVendorAccess( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> ConsumeCurrency( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> buyer, <font color="blue">ref</font> <font color="blue">int</font> amount, <font color="blue">ref</font> <font color="blue">bool</font> bought )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">virtual</font> <font color="blue">object</font> GetCashObject( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> GetPriceScalar()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> GetProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> GetSellPrice( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> seller, <!-- DBG-0 --><a href="IShopSellInfo.html">IShopSellInfo</a> info, <!-- DBG-0 --><a href="SellItemResponse.html">SellItemResponse</a> resp )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> InitBuyInfo()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> InitSBInfo()<br>
+      <!-- DBG-0 --><a href="GenericBuyInfo.html">GenericBuyInfo</a> LookupDisplayObject( <font color="blue">object</font> obj )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnAfterDelete()<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnBuyItems( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> buyer, <font color="blue">List</font>&lt;<a href="BuyItemResponse.html">BuyItemResponse</a>&gt; list )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnDelete()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnRaceChange( <!-- DBG-0 --><a href="Race.html">Race</a> oldRace )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnSellItems( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> seller, <font color="blue">List</font>&lt;<a href="SellItemResponse.html">SellItemResponse</a>&gt; list )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnThink()<br>
+      <font color="blue">void</font> ProcessSinglePurchase( <!-- DBG-0 --><a href="BuyItemResponse.html">BuyItemResponse</a> buy, <!-- DBG-0 --><a href="IBuyItemInfo.html">IBuyItemInfo</a> bii, <font color="blue">ICollection</font>&lt;<a href="BuyItemResponse.html">BuyItemResponse</a>&gt; validBuy, <font color="blue">ref</font> <font color="blue">int</font> controlSlots, <font color="blue">ref</font> <font color="blue">bool</font> fullPurchase, <font color="blue">ref</font> <font color="blue">int</font> totalCost )<br>
+      <font color="blue">void</font> ProcessValidPurchase( <font color="blue">int</font> amount, <!-- DBG-0 --><a href="IBuyItemInfo.html">IBuyItemInfo</a> bii, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> buyer, <!-- DBG-0 --><a href="Container.html">Container</a> cont )<br>
+      <font color="blue">void</font> RemoveOrder()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> RemoveOrder( Type type )<br>
+      <font color="blue">void</font> RemoveStock()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> RemoveStock( Type type )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> ResolveCurrency( <font color="blue">out</font> Type type, <font color="blue">out</font> <!-- DBG-0 --><a href="TextDefinition.html">TextDefinition</a> name )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> VendorSell( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+   </body>
+</html>

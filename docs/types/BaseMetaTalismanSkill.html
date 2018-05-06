@@ -1,0 +1,39 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - BaseMetaTalismanSkill</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/Server.Items.MetaTalisman.Skills.html">Back to Server.Items.MetaTalisman.Skills</a></h4>
+      <h2>BaseMetaTalismanSkill : <!-- DBG-1 --><font color="blue">PropertyObject</font>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass4.html">(Anonymous-Type)--c__DisplayClass4</a>, <!-- DBG-4 --><a href="InternalBleedTimer.html">InternalBleedTimer</a></h4>
+      (<font color="blue">static</font>) <font color="blue">int</font> BloodOffset( <font color="blue">int</font> coord )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CreateBlood( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> loc, <!-- DBG-0 --><a href="Map.html">Map</a> map, <font color="blue">bool</font> delayed, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      (<font color="blue">ctor</font>) BaseMetaTalismanSkill( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      (<font color="blue">ctor</font>) BaseMetaTalismanSkill( <!-- DBG-0 --><a href="MetaTalismanSkillType.html">MetaTalismanSkillType</a> skilltype, <font color="blue">string</font> name, <font color="blue">int</font> nle, <font color="blue">int</font> maxlevel, <font color="blue">double</font> chance, TimeSpan cooldown, <font color="blue">double</font> multi )<br>
+      <font color="blue">double</font> AbilityMultiplier( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">double</font> ChanceToActivate( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      TimeSpan CoolDown( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Experience( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Level( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> MaxLevel( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="MetaTalismanSkillType.html">MetaTalismanSkillType</a> MetaTalismanSkillType( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> Name( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> NextLevelExperience( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      DateTime NextUse( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Clear()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">void</font> DoAbilityDoubleStrike( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> target, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker )<br>
+      <font color="blue">void</font> DoAbilityExsanguinate( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> target, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker )<br>
+      <font color="blue">void</font> DoAbilityInfectiousWounds( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> target, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker )<br>
+      <font color="blue">void</font> DoAbilityPhaseShift( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> target, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> FindAbility( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> target, <!-- DBG-0 --><a href="BaseMetaTalisman.html">BaseMetaTalisman</a> talisman, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker )<br>
+      <font color="blue">void</font> LevelUpDoubleStrike( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">void</font> LevelUpExsanguinate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">void</font> LevelUpInfectiousWounds( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">void</font> LevelUpPhaseShift( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Reset()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> SetLevel()<br>
+      <font color="blue">void</font> Target( <!-- DBG-0 --><a href="IPoint3D.html">IPoint3D</a> p, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker )<br>
+   </body>
+</html>

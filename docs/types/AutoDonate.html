@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - AutoDonate</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Modules.AutoDonate.html">Back to VitaNex.Modules.AutoDonate</a></h4>
+      <h2>AutoDonate</h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass19.html">(Anonymous-Type)--c__DisplayClass19</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass1f.html">(Anonymous-Type)--c__DisplayClass1f</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass5.html">(Anonymous-Type)--c__DisplayClass5</a></h4>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="DonationOptions.html">DonationOptions</a> CMOptions( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      (<font color="blue">static</font>) <a href="BinaryDirectoryDataStore-T-.html">BinaryDirectoryDataStore</a>&lt;<a href="IAccount.html">IAccount</a>,<a href="DonationProfile.html">DonationProfile</a>&gt; Profiles( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      (<font color="blue">static</font>) <a href="BinaryDataStore-T-.html">BinaryDataStore</a>&lt;<a href="String.html">String</a>,<a href="DonationTransaction.html">DonationTransaction</a>&gt; Transactions( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <CheckConfig>b__9( <!-- DBG-0 --><a href="DonationAdminUI.html">DonationAdminUI</a> g )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <CMConfig>b__d( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <CMConfig>b__e( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <CMLoad>b__11( <!-- DBG-0 --><a href="IAccount.html">IAccount</a> ac )<br>
+      (<font color="blue">static</font>) <font color="blue">KeyValuePair</font>&lt;<a href="String.html">String</a>,<a href="DonationTransaction.html">DonationTransaction</a>&gt; <DeserializeTransactions>b__15( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> r )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> <SerializeTransactions>b__13( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> w, <font color="blue">string</font> k, <!-- DBG-0 --><a href="DonationTransaction.html">DonationTransaction</a> v )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <SpotCheck>b__0( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> p )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> BeginVerification( HttpWebRequest webReq, <font color="blue">string</font> state )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CheckConfig( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> user )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CheckDonate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> user, <font color="blue">bool</font> message )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CMConfig()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CMDisabled()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CMEnabled()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CMLoad()<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> CMSave()<br>
+      (<font color="blue">static</font>) <a href="Tuple-T-.html">Tuple</a>&lt;<a href="IAccount.html">IAccount</a>,<a href="DonationProfile.html">DonationProfile</a>&gt; DeserializeProfiles( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> DeserializeTransactions( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> EndVerification( HttpWebRequest webReq, <font color="blue">string</font> state, HttpWebResponse webRes )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="DonationProfile.html">DonationProfile</a> EnsureProfile( <!-- DBG-0 --><a href="IAccount.html">IAccount</a> a )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> ExtractCart( <!-- DBG-0 --><a href="WebAPIQueries.html">WebAPIQueries</a> queries, <font color="blue">out</font> <font color="blue">long</font> credit, <font color="blue">out</font> <font color="blue">double</font> value )<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="DonationProfile.html">DonationProfile</a> FindProfile( <!-- DBG-0 --><a href="IAccount.html">IAccount</a> a )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> HandleAccountCheck( <!-- DBG-0 --><a href="WebAPIContext.html">WebAPIContext</a> context )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> HandleIPN( <!-- DBG-0 --><a href="WebAPIContext.html">WebAPIContext</a> context )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> HandleWebForm( <!-- DBG-0 --><a href="WebAPIContext.html">WebAPIContext</a> context )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> OnLogin( <!-- DBG-0 --><a href="LoginEventArgs.html">LoginEventArgs</a> e )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> ProcessTransaction( <!-- DBG-0 --><a href="WebAPIQueries.html">WebAPIQueries</a> queries )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> RefreshAdminUI()<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> SerializeProfiles( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer, <!-- DBG-0 --><a href="IAccount.html">IAccount</a> key, <!-- DBG-0 --><a href="DonationProfile.html">DonationProfile</a> val )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> SerializeTransactions( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> SpotCheck( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> user )<br>
+      (<font color="blue">static</font>) <font color="blue">void</font> SpotCheck( <!-- DBG-0 --><a href="IAccount.html">IAccount</a> a )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> VerifyValue( <!-- DBG-0 --><a href="WebAPIQueries.html">WebAPIQueries</a> queries, <font color="blue">string</font> key, <font color="blue">string</font> val )<br>
+   </body>
+</html>

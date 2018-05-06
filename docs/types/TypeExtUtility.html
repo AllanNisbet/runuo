@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - TypeExtUtility</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/System.html">Back to System</a></h4>
+      <h2>TypeExtUtility</h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass6.html">(Anonymous-Type)--c__DisplayClass6</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClassa.html">(Anonymous-Type)--c__DisplayClassa</a>, <!-- DBG-4 --><a href="(Anonymous-Type)-EnumerateHierarchy-d__0.html">(Anonymous-Type)-EnumerateHierarchy-d__0</a></h4>
+      (<font color="blue">static</font>) <font color="blue">int</font> CompareTo( Type t, Type other )<br>
+      (<font color="blue">static</font>) <font color="blue">object</font> CreateInstance( Type t, <font color="blue">object</font>[] args )<br>
+      (<font color="blue">static</font>) TObj CreateInstance( Type t, <font color="blue">object</font>[] args )<br>
+      (<font color="blue">static</font>) TObj CreateInstanceSafe( Type t, <font color="blue">object</font>[] args )<br>
+      (<font color="blue">static</font>) <font color="blue">object</font> CreateInstanceUnsafe( Type t, <font color="blue">object</font>[] args )<br>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<a href="Type.html">Type</a>&gt; EnumerateHierarchy( Type t )<br>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<a href="Type.html">Type</a>&gt; EnumerateHierarchy( Type t, <font color="blue">bool</font> self )<br>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<a href="Type.html">Type</a>&gt; FindChildren( Type type, <a href="Func-T-.html">Func</a>&lt;<a href="Type.html">Type</a>,<a href="Boolean.html">Boolean</a>&gt; predicate )<br>
+      (<font color="blue">static</font>) <font color="blue">IEnumerable</font>&lt;<a href="Type.html">Type</a>&gt; FindConstructableChildren( Type type, <a href="Func-T-.html">Func</a>&lt;<a href="Type.html">Type</a>,<a href="Boolean.html">Boolean</a>&gt; predicate )<br>
+      (<font color="blue">static</font>) Type[] GetChildren( Type type, <a href="Func-T-.html">Func</a>&lt;<a href="Type.html">Type</a>,<a href="Boolean.html">Boolean</a>&gt; predicate )<br>
+      (<font color="blue">static</font>) Type[] GetConstructableChildren( Type type, <a href="Func-T-.html">Func</a>&lt;<a href="Type.html">Type</a>,<a href="Boolean.html">Boolean</a>&gt; predicate )<br>
+      (<font color="blue">static</font>) TAttribute[] GetCustomAttributes( Type t, <font color="blue">bool</font> inherit )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> GetCustomAttributes( Type t, <font color="blue">bool</font> inherit, <font color="blue">out</font> TAttribute[] attrs )<br>
+      (<font color="blue">static</font>) Type[] GetHierarchy( Type t )<br>
+      (<font color="blue">static</font>) Type[] GetHierarchy( Type t, <font color="blue">bool</font> self )<br>
+      (<font color="blue">static</font>) Type[] GetTypeCache( Assembly asm )<br>
+      (<font color="blue">static</font>) <font color="blue">int</font> GetValueHashCode( Type t )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> HasCustomAttribute( Type t, <font color="blue">bool</font> inherit )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> HasInterface( Type t )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> HasInterface( Type t, Type i )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsChildOf( Type t )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsChildOf( Type a, Type b )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsConstructable( Type a )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsConstructable( Type a, Type[] argTypes )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsConstructableFrom( Type t )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsConstructableFrom( Type t, Type[] argTypes )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsConstructableFrom( Type a, Type b )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsConstructableFrom( Type a, Type b, Type[] argTypes )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsEqual( Type t )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsEqual( Type a, <font color="blue">string</font> bName )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsEqual( Type a, Type b )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsEqual( Type a, <font color="blue">string</font> bName, <font color="blue">bool</font> ignoreCase )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsEqual( Type a, <font color="blue">string</font> bName, <font color="blue">bool</font> ignoreCase, <font color="blue">bool</font> fullName )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsEqualOrChildOf( Type t )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsEqualOrChildOf( Type a, <font color="blue">string</font> bName )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsEqualOrChildOf( Type a, Type b )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsEqualOrChildOf( Type a, <font color="blue">string</font> bName, <font color="blue">bool</font> ignoreCase )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsEqualOrChildOf( Type a, <font color="blue">string</font> bName, <font color="blue">bool</font> ignoreCase, <font color="blue">bool</font> fullName )<br>
+   </body>
+</html>

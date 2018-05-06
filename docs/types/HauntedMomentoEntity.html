@@ -1,0 +1,52 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - HauntedMomentoEntity</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Items.html">Back to VitaNex.Items</a></h4>
+      <h2>HauntedMomentoEntity : <!-- DBG-1 --><a href="BaseCreature.html">BaseCreature</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Mobile.html">Mobile</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;, <!-- DBG-2.2 --><a href="IHonorTarget.html">IHonorTarget</a>, <!-- DBG-2.2 --><a href="IQuestGiver.html">IQuestGiver</a></h2>
+      (<font color="blue">static</font>) <font color="blue">bool</font> IsBeingLookedAt( <!-- DBG-0 --><a href="Direction.html">Direction</a> facing, <!-- DBG-0 --><a href="Direction.html">Direction</a> to )<br>
+      (<font color="blue">ctor</font>) HauntedMomentoEntity( <!-- DBG-0 --><a href="HauntedMomento.html">HauntedMomento</a> momento )<br>
+      (<font color="blue">ctor</font>) HauntedMomentoEntity( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br>
+      <font color="blue">bool</font> AlwaysMurderer( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> BardImmune( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> BleedImmune( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> CanDrop( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> CanMoveOverObstacles( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> CanOpenDoors( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> CanTarget( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> Clicked( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> ClickTitle( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> Combatant( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Commandable( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> DeleteCorpseOnDeath( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> IsDispellable( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> IsScaryToPets( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="HauntedMomento.html">HauntedMomento</a> Momento( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> NoHouseRestrictions( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> PlayerRangeSensitive( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> ShowFameTitle( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> Unprovokable( <font color="blue">get</font>; )<br>
+      <font color="blue">void</font> <OnDoubleClick>b__0()<br>
+      <font color="blue">void</font> <OnSingleClick>b__2()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> AddNameProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanBeControlledBy( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanBeDamaged()<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanBeRenamedBy( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> ChangeBody()<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CheckAttack( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CheckFlee()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> GenerateLoot()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> GetProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnAfterDelete()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnDragDrop( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> dropped )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnDragLift( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnMove( <!-- DBG-0 --><a href="Direction.html">Direction</a> d )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnSingleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnStatsQuery( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnThink()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+   </body>
+</html>

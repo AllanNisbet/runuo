@@ -1,0 +1,40 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - BaseEffect&lt;TQueue,TEffectInfo&gt;</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.FX.html">Back to VitaNex.FX</a></h4>
+      <h2>BaseEffect&lt;TQueue,TEffectInfo&gt; : List`1, <!-- DBG-2.1 --><font color="blue">IList</font>&lt;<a href="TQueue.html">TQueue</a>&gt;, <!-- DBG-2.1 --><font color="blue">ICollection</font>&lt;<a href="TQueue.html">TQueue</a>&gt;, <!-- DBG-2.1 --><font color="blue">IEnumerable</font>&lt;<a href="TQueue.html">TQueue</a>&gt;, <!-- DBG-2.1 --><font color="blue">IEnumerable</font>, <!-- DBG-2.1 --><font color="blue">IList</font>, <!-- DBG-2.1 --><font color="blue">ICollection</font>, <!-- DBG-2.1 --><font color="blue">IReadOnlyList</font>&lt;<a href="TQueue.html">TQueue</a>&gt;, <!-- DBG-2.1 --><font color="blue">IReadOnlyCollection</font>&lt;<a href="TQueue.html">TQueue</a>&gt;, <!-- DBG-2.2 --><a href="IEffect.html">IEffect</a></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass8.html">(Anonymous-Type)--c__DisplayClass8</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClassa.html">(Anonymous-Type)--c__DisplayClassa</a></h4>
+      (<font color="blue">static</font>) TQueue <Update>b__0( <font color="blue">int</font> i )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <Update>b__3( TQueue l )<br>
+      (<font color="blue">ctor</font>) BaseEffect&lt;TQueue,TEffectInfo&gt;( <!-- DBG-0 --><a href="IPoint3D.html">IPoint3D</a> start, <!-- DBG-0 --><a href="Map.html">Map</a> map, <font color="blue">int</font> repeat, <a href="Nullable-T-.html">Nullable</a>&lt;<a href="TimeSpan.html">TimeSpan</a>&gt; interval, <a href="Action-T-.html">Action</a>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; effectHandler, Action callback )<br>
+      Action Callback( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> CurrentProcess( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      TQueue CurrentQueue( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <a href="Action-T-.html">Action</a>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; EffectHandler( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <a href="Action-T-.html">Action</a>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; EffectMutator( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      TEffectInfo[] Effects( <font color="blue">get</font>; )<br>
+      <font color="blue">bool</font> EnableMutate( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      TimeSpan Interval( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="Map.html">Map</a> Map( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Processing( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Repeat( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Reversed( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Sending( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="IPoint3D.html">IPoint3D</a> Start( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      TEffectInfo[] <Update>b__1( <font color="blue">int</font> fxi )<br>
+      <font color="blue">virtual</font> TEffectInfo CloneEffectInfo( TEffectInfo src )<br>
+      <font color="blue">virtual</font> TQueue CreateEffectQueue( <font color="blue">IEnumerable</font>&lt;<a href="TEffectInfo.html">TEffectInfo</a>&gt; queue )<br>
+      <font color="blue">virtual</font> <!-- DBG-0 --><a href="Point3D.html">Point3D</a>[][] GetTargetPoints( <font color="blue">int</font> dist )<br>
+      <font color="blue">void</font> InternalCallback()<br>
+      <font color="blue">void</font> InternalCallback( TQueue next )<br>
+      <font color="blue">void</font> InternalMoveNext( TQueue next )<br>
+      <font color="blue">void</font> InternalSend()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> MutateEffect( TEffectInfo e )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnSend()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnUpdated()<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Send()<br>
+      <font color="blue">void</font> Update()<br>
+   </body>
+</html>

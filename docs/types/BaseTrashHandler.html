@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - BaseTrashHandler</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Modules.TrashCollection.html">Back to VitaNex.Modules.TrashCollection</a></h4>
+      <h2>BaseTrashHandler</h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="GeneralTrashHandler.html">GeneralTrashHandler</a></h4>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass4.html">(Anonymous-Type)--c__DisplayClass4</a></h4>
+      (<font color="blue">ctor</font>) BaseTrashHandler()<br>
+      (<font color="blue">ctor</font>) BaseTrashHandler( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      (<font color="blue">ctor</font>) BaseTrashHandler( <font color="blue">bool</font> enabled, <!-- DBG-0 --><a href="TrashPriority.html">TrashPriority</a> priority, <font color="blue">IEnumerable</font>&lt;<a href="Type.html">Type</a>&gt; accepts, <font color="blue">IEnumerable</font>&lt;<a href="Type.html">Type</a>&gt; ignores )<br>
+      <font color="blue">List</font>&lt;<a href="Type.html">Type</a>&gt; Accepted( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> BonusTokens( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> BonusTokensChance( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Enabled( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> IgnoreBlessed( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">List</font>&lt;<a href="Type.html">Type</a>&gt; Ignored( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> IgnoreInsured( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="TrashPriority.html">TrashPriority</a> Priority( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> UID( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanTrash( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> trash, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> GetTrashTokens( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> trashed, <font color="blue">ref</font> <font color="blue">int</font> tokens, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> IsAccepted( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, Type trash )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> IsIgnored( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, Type trash )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnTrashed( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> trashed, <font color="blue">ref</font> <font color="blue">int</font> tokens, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnTrashRejected( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> trashed, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">bool</font> Trash( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> trashed, <font color="blue">bool</font> message )<br>
+      <font color="blue">bool</font> Trash( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> trashed, <font color="blue">ref</font> <font color="blue">int</font> tokens, <font color="blue">bool</font> message )<br>
+   </body>
+</html>

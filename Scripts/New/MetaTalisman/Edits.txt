@@ -1,0 +1,140 @@
+//BaseCreature.cs edits
+
+	//LOCATION : references
+	using Server.Mobiles.MetaPet;
+	using Server.Mobiles.MetaSkills;
+	using Server.Items.MetaTalisman;
+	using Server.Items.MetaTalismanSkills;
+	
+	//
+	private Dictionary<BaseMetaPet, int> evodragons;
+	private Dictionary<BaseMetaTalisman, int> evotalismans;
+
+	//LOCATION: public override void OnDamage(int amount, Mobile from, bool willKill)
+	//META PET
+	if (!Controlled)
+	{
+		if (from is BaseMetaPet)
+		{
+			var score = amount;
+			if (evodragons == null)
+			{
+				evodragons = new Dictionary<BaseMetaPet, int>();
+			}
+			if (!evodragons.ContainsKey(from as BaseMetaPet))
+			{
+				evodragons.Add(from as BaseMetaPet, score);
+			}
+			else
+			{
+				evodragons[from as BaseMetaPet] += score;
+			}
+		}
+						
+		//META DEXXER
+		Item item = from.FindItemOnLayer( Layer.Talisman );
+		
+		if (from is PlayerMobile && item != null) 
+		{
+			var taliscore = amount;
+			if (evotalismans == null)
+			{
+				evotalismans = new Dictionary<BaseMetaTalisman, int>();
+			}
+			if (!evotalismans.ContainsKey(item as BaseMetaTalisman))
+			{
+				evotalismans.Add(item as BaseMetaTalisman, taliscore);
+			}
+			else
+			{
+				evotalismans[item as BaseMetaTalisman] += taliscore;
+			}
+		}
+		
+	//LOCATION : public override void OnDeath(Container c)
+		//META PET
+		if (!Controlled && !Summoned && evodragons != null)
+		{
+			foreach (var evolutionDragon in evodragons)
+			{
+				int score = evolutionDragon.Value;
+				
+				if (score > HitsMax)
+				{
+					score = HitsMax;
+				}
+				evolutionDragon.Key.Addpoints(this, score);
+			}
+			evodragons.Clear();
+		}
+		//META DEXXER
+		if (!Controlled && !Summoned && evotalismans != null)
+		{
+			foreach (var evolutionTalisman in evotalismans)
+			{
+				int score = evolutionTalisman.Value;
+				
+				if (score > HitsMax)
+				{
+					score = HitsMax;
+				}
+				evolutionTalisman.Key.Addpoints(this, score);
+			}
+			evotalismans.Clear();
+		}
+
+//BaseWeapon.cs edits
+
+	//LOCATION : references
+	using Server.Items.MetaTalisman;
+	using Server.Items.MetaTalisman.Skills;
+	using Server.Items.MetaTalismanSkills;
+	
+	//LOCATION : public virtual void OnHit(Mobile attacker, IDamageable damageable, double damageBonus)
+		Mobile defender = damageable as Mobile;
+		BaseCreature mob = damageable as BaseCreature;
+		//META Dexxer 
+		Item metatalisman = attacker.FindItemOnLayer(Layer.Talisman);
+		if (attacker.Player && defender is BaseCreature)
+		{	
+			//if Berserker add 25% extra
+			if (metatalisman != null && metatalisman is TotemOfTheBerserker)
+			{
+				if (metatalisman is BaseMetaTalisman)
+				{
+					var tali = metatalisman as BaseMetaTalisman;
+					tali.DoAbility(MetaTalismanSkillType.DoubleStrike, mob);
+					tali.DoAbility(MetaTalismanSkillType.InfectiousWounds, mob);
+					tali.DoAbility(MetaTalismanSkillType.PhaseShift, mob);
+					tali.DoAbility(MetaTalismanSkillType.Tread, mob);
+				}
+				damageBonus += .25;
+				Console.WriteLine("BaseWeapon Damage Bonus 25%: (" + damageBonus + ")");
+			}
+			/* else if (metatalisman != null && metatalisman is IdolOfTheMagi)
+			{
+				if (metatalisman is BaseMetaTalisman)
+				{
+					var tali = metatalisman as BaseMetaTalisman;
+					tali.DoAbility(MetaTalismanSkillType.Dispersion, mob);
+					tali.DoAbility(MetaTalismanSkillType.Focus, mob);
+					tali.DoAbility(MetaTalismanSkillType.ShadowDisciple, mob);
+					tali.DoAbility(MetaTalismanSkillType.Vivify, mob);
+				}
+				damageBonus -= .25;
+				Console.WriteLine("BaseWeapon Damage Penalty 25%: (" + damageBonus + ")");
+			} */
+			/* else if (metatalisman != null && metatalisman is PhylacteryOfResilience)
+			{
+				if (metatalisman is BaseMetaTalisman)
+				{
+					var tali = metatalisman as BaseMetaTalisman;
+					tali.DoAbility(MetaTalismanSkillType.Quicksilver, mob);
+					tali.DoAbility(MetaTalismanSkillType.VenemousBlood, mob);
+					tali.DoAbility(MetaTalismanSkillType.Molten, mob);
+					tali.DoAbility(MetaTalismanSkillType.Bleed, mob);
+				}
+				damageBonus += .10;
+				Console.WriteLine("BaseWeapon Damage Bonus 10%: (" + damageBonus + ")");
+			} */
+		}

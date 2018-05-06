@@ -1,0 +1,54 @@
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - RuneCodex</title>
+   </head>
+   <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
+      <h4><a href="../namespaces/VitaNex.Items.html">Back to VitaNex.Items</a></h4>
+      <h2>RuneCodex : <!-- DBG-1 --><a href="Item.html">Item</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;, <!-- DBG-2.2 --><a href="ISecurable.html">ISecurable</a></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass15.html">(Anonymous-Type)--c__DisplayClass15</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass1a.html">(Anonymous-Type)--c__DisplayClass1a</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass2.html">(Anonymous-Type)--c__DisplayClass2</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClass6.html">(Anonymous-Type)--c__DisplayClass6</a>, <!-- DBG-4 --><a href="(Anonymous-Type)--c__DisplayClassa.html">(Anonymous-Type)--c__DisplayClassa</a>, <!-- DBG-4 --><a href="UICache.html">UICache</a></h4>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <Add>b__c( <!-- DBG-0 --><a href="Runebook.html">Runebook</a> r )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <Drop>b__e( <!-- DBG-0 --><a href="RuneCodexEntry.html">RuneCodexEntry</a> e )<br>
+      (<font color="blue">static</font>) <font color="blue">bool</font> <GetProperties>b__11( <!-- DBG-0 --><a href="RuneCodexCategory.html">RuneCodexCategory</a> c )<br>
+      (<font color="blue">ctor</font>) RuneCodex()<br>
+      (<font color="blue">ctor</font>) RuneCodex( <font color="blue">int</font> charges )<br>
+      (<font color="blue">ctor</font>) RuneCodex( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br>
+      <font color="blue">bool</font> AddLocked( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="RuneCodexCategoryGrid.html">RuneCodexCategoryGrid</a> Categories( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> Charges( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">Dictionary</font>&lt;<a href="Type.html">Type</a>,<a href="Int32.html">Int32</a>&gt; ChargeTypes( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> CloneEntryChargeCost( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> Descripton( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> EditLocked( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> GateChargeCost( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="SecureLevel.html">SecureLevel</a> Level( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> RecallChargeCost( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> RemoveLocked( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">List</font>&lt;<a href="UICache.html">UICache</a>&gt; Users( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> Add( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Item.html">Item</a> item, <!-- DBG-0 --><a href="RuneCodexCategory.html">RuneCodexCategory</a> cat, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> AddCharges( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Item.html">Item</a> item, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> AddRune( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="RecallRune.html">RecallRune</a> rune, <!-- DBG-0 --><a href="RuneCodexCategory.html">RuneCodexCategory</a> cat, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> AddRunebook( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Runebook.html">Runebook</a> book, <!-- DBG-0 --><a href="RuneCodexCategory.html">RuneCodexCategory</a> cat, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanAddCategories( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanAddEntries( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanChargeWith( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Item.html">Item</a> item, <font color="blue">out</font> <font color="blue">int</font> cost, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanEditCategories( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanEditEntries( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanRemoveCategories( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanRemoveEntries( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> ConsumeCharges( <font color="blue">int</font> amount )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
+      <font color="blue">bool</font> Drop( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="RuneCodexEntry.html">RuneCodexEntry</a> entry, <font color="blue">bool</font> message )<br>
+      <font color="blue">bool</font> Drop( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="RuneCodexCategory.html">RuneCodexCategory</a> cat, <font color="blue">bool</font> message )<br>
+      <font color="blue">bool</font> Gate( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="RuneCodexEntry.html">RuneCodexEntry</a> entry, <font color="blue">bool</font> message )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> GetContextMenuEntries( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">List</font>&lt;<a href="ContextMenuEntry.html">ContextMenuEntry</a>&gt; list )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> GetProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> IsAccessibleTo( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> check )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnAfterDuped( <!-- DBG-0 --><a href="Item.html">Item</a> newItem )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> OnDragDrop( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Item.html">Item</a> dropped )<br>
+      <font color="blue">bool</font> Recall( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="RuneCodexEntry.html">RuneCodexEntry</a> entry, <font color="blue">bool</font> message )<br>
+      <font color="blue">bool</font> Remove( <!-- DBG-0 --><a href="RuneCodexCategory.html">RuneCodexCategory</a> cat )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">void</font> SetDescription( <font color="blue">string</font> desc )<br>
+   </body>
+</html>
